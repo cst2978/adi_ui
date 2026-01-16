@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "path": "/api/v1/patients/{patient_id}/real-time-monitoring",
+  "response_schema": "real_time_monitoring_v1"
+}

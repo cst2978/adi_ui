@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "screen": "patient_overview",
+  "mode": {
+    "data_mode": "mock"
+  },
+  "sql": {
+    "connection_key": "primary_db",
+    "patient_lookup": {
+      "request_param": "patient_id"
+    },
+    "tables": {
+      "patient_table": {
+        "name": "PATIENT",
+        "alias": "p",
+        "primary_key": "patient_id"
+      }
+    },
+    "mappings": {
+      "patient_header": {
+        "patient_id": "patient_id",
+        "name": "patient_name",
+        "gender": "gender",
+        "date_of_birth": "date_of_birth",
+        "diagnosis": "primary_diagnosis",
+        "risk_level": "risk_level",
+        "diagnosis_date": "diagnosis_date",
+        "mutation_type": "mutation_type",
+        "ambulatory_status": "ambulatory_status",
+        "current_therapy": "current_therapy",
+        "care_team": "care_team",
+        "test_type": "test_type",
+        "profile_photo_url": "profile_photo_url"
+      }
+    }
+  },
+  "apis": {
+    "base_url": "http://localhost:3000",
+    "endpoints": {
+      "patient_overview": "config/endpoints/patient_overview.json"
+    }
+  },
+  "tiles": {
+    "layout": {
+      "grid": {
+        "min_tile_width_px": 360,
+        "gap_px": 16
+      }
+    },
+    "groups": [
+      {
+        "group_id": "functional_scores_summary",
+        "title": "Functional Scores Summary",
+        "order": 1
+      },
+      {
+        "group_id": "pulmonary_function_summary",
+        "title": "Pulmonary Function Summary",
+        "order": 2
+      },
+      {
+        "group_id": "biomarker_trends",
+        "title": "Biomarker Trends",
+        "order": 3
+      },
+      {
+        "group_id": "therapy_response",
+        "title": "Therapy Response",
+        "order": 4
+      }
+    ],
+    "items": [
+      {
+        "tile_id": "nsaa",
+        "group_id": "functional_scores_summary",
+        "title": "NSAA",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "6mwt",
+        "group_id": "functional_scores_summary",
+        "title": "6MWT",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "timed_up_and_go",
+        "group_id": "functional_scores_summary",
+        "title": "Timed Up and Go",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "sit_to_stand",
+        "group_id": "functional_scores_summary",
+        "title": "Sit to Stand",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "fvc",
+        "group_id": "pulmonary_function_summary",
+        "title": "FVC",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "peak_expiratory_flow",
+        "group_id": "pulmonary_function_summary",
+        "title": "Peak Expiratory Flow",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "respiration_rate_rest",
+        "group_id": "pulmonary_function_summary",
+        "title": "Respiration Rate (Rest)",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "spo2_rest",
+        "group_id": "pulmonary_function_summary",
+        "title": "SpO2 (At Rest)",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "ck",
+        "group_id": "biomarker_trends",
+        "title": "CK",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "alt",
+        "group_id": "biomarker_trends",
+        "title": "ALT",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "ast",
+        "group_id": "biomarker_trends",
+        "title": "AST",
+        "response_schema": "metric_standard_v1"
+      },
+      {
+        "tile_id": "therapy_steroid",
+        "group_id": "therapy_response",
+        "title": "Steroid",
+        "response_schema": "therapy_response_v1"
+      },
+      {
+        "tile_id": "therapy_gene",
+        "group_id": "therapy_response",
+        "title": "Gene Therapy",
+        "response_schema": "therapy_response_v1"
+      }
+    ]
+  }
+}

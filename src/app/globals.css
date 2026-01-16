@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: 8 12 18;
+  --color-panel: 15 22 32;
+  --color-panel-soft: 21 30 42;
+  --color-ink: 235 242 255;
+  --color-ink-muted: 164 180 205;
+  --color-accent: 90 130 255;
+  --color-accent-soft: 24 45 84;
+  --color-alert: 237 101 113;
+  --color-warning: 241 179 90;
+  --color-success: 96 201 164;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(70, 110, 255, 0.2), transparent 55%),
+    radial-gradient(circle at 20% 20%, rgba(28, 76, 130, 0.4), transparent 45%),
+    linear-gradient(160deg, #05070c 0%, #0a121f 40%, #0b0f17 100%);
+  color: rgb(var(--color-ink));
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+main {
+  isolation: isolate;
+}
+
+::selection {
+  background: rgba(90, 130, 255, 0.35);
+}

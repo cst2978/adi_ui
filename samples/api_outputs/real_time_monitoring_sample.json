@@ -1,0 +1,1352 @@
+{
+  "schema": "real_time_monitoring_v1",
+  "patient_id": "PAT-123",
+  "updated_at": "2026-01-10T21:10:00Z",
+  "date_ranges": [
+    "1M",
+    "2M",
+    "3M",
+    "6M",
+    "Y"
+  ],
+  "cardiovascular": {
+    "summary": [
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "hr_rest",
+        "title": "HR (Rest)",
+        "units": "bpm",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 92,
+            "label": "92 bpm",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 84,
+            "label": "84 bpm"
+          },
+          "average": {
+            "value": 80,
+            "label": "80 bpm"
+          },
+          "current": {
+            "value": 100,
+            "label": "100 bpm",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "up",
+            "delta": 8,
+            "delta_label": "+8 bpm vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "Resting HR elevated"
+          ]
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "hr_variability",
+        "title": "HR Variability",
+        "units": "ms",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 42,
+            "label": "42 ms",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 50,
+            "label": "50 ms"
+          },
+          "average": {
+            "value": 45,
+            "label": "45 ms"
+          },
+          "current": {
+            "value": 39,
+            "label": "39 ms",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -3,
+            "delta_label": "-3 ms vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "pulse",
+        "title": "Pulse",
+        "units": "bpm",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 90,
+            "label": "90 bpm",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 82,
+            "label": "82 bpm"
+          },
+          "average": {
+            "value": 85,
+            "label": "85 bpm"
+          },
+          "current": {
+            "value": 98,
+            "label": "98 bpm",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "up",
+            "delta": 8,
+            "delta_label": "+8 bpm vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "blood_pressure",
+        "title": "Blood Pressure",
+        "units": "mmHg",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 112,
+            "label": "112/74",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 110,
+            "label": "110/72"
+          },
+          "average": {
+            "value": 108,
+            "label": "108/70"
+          },
+          "current": {
+            "value": 118,
+            "label": "118/76",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "up",
+            "delta": 6,
+            "delta_label": "+6 mmHg vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "BP trending high"
+          ]
+        }
+      }
+    ],
+    "metrics": [
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "cardio_endurance",
+        "title": "Cardio Endurance",
+        "units": "score",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 62,
+            "label": "62/100",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 70,
+            "label": "70/100"
+          },
+          "average": {
+            "value": 64,
+            "label": "64/100"
+          },
+          "current": {
+            "value": 66,
+            "label": "66/100",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "up",
+            "delta": 4,
+            "delta_label": "+4 vs baseline"
+          },
+          "series": [
+            {
+              "date": "2025-01-05",
+              "value": 61.82
+            },
+            {
+              "date": "2025-01-06",
+              "value": 61.81
+            },
+            {
+              "date": "2025-01-08",
+              "value": 61.8
+            },
+            {
+              "date": "2025-01-10",
+              "value": 61.81
+            },
+            {
+              "date": "2025-01-12",
+              "value": 61.83
+            },
+            {
+              "date": "2025-01-14",
+              "value": 61.87
+            },
+            {
+              "date": "2025-01-16",
+              "value": 61.91
+            },
+            {
+              "date": "2025-01-18",
+              "value": 61.95
+            },
+            {
+              "date": "2025-01-20",
+              "value": 61.99
+            },
+            {
+              "date": "2025-01-22",
+              "value": 62.01
+            },
+            {
+              "date": "2025-01-24",
+              "value": 62.03
+            },
+            {
+              "date": "2025-01-26",
+              "value": 62.02
+            },
+            {
+              "date": "2025-01-28",
+              "value": 62.01
+            },
+            {
+              "date": "2025-01-30",
+              "value": 61.98
+            },
+            {
+              "date": "2025-02-01",
+              "value": 61.95
+            },
+            {
+              "date": "2025-02-03",
+              "value": 61.92
+            },
+            {
+              "date": "2025-02-05",
+              "value": 61.91
+            },
+            {
+              "date": "2025-02-07",
+              "value": 61.91
+            },
+            {
+              "date": "2025-02-08",
+              "value": 61.94
+            },
+            {
+              "date": "2025-02-10",
+              "value": 62.01
+            },
+            {
+              "date": "2025-02-12",
+              "value": 62.11
+            },
+            {
+              "date": "2025-02-14",
+              "value": 62.25
+            },
+            {
+              "date": "2025-02-16",
+              "value": 62.41
+            },
+            {
+              "date": "2025-02-18",
+              "value": 62.6
+            },
+            {
+              "date": "2025-02-20",
+              "value": 62.8
+            },
+            {
+              "date": "2025-02-22",
+              "value": 63
+            },
+            {
+              "date": "2025-02-24",
+              "value": 63.19
+            },
+            {
+              "date": "2025-02-26",
+              "value": 63.36
+            },
+            {
+              "date": "2025-02-28",
+              "value": 63.5
+            },
+            {
+              "date": "2025-03-02",
+              "value": 63.6
+            },
+            {
+              "date": "2025-03-04",
+              "value": 63.67
+            },
+            {
+              "date": "2025-03-06",
+              "value": 63.71
+            },
+            {
+              "date": "2025-03-08",
+              "value": 63.71
+            },
+            {
+              "date": "2025-03-10",
+              "value": 63.7
+            },
+            {
+              "date": "2025-03-12",
+              "value": 63.67
+            },
+            {
+              "date": "2025-03-14",
+              "value": 63.64
+            },
+            {
+              "date": "2025-03-15",
+              "value": 63.61
+            },
+            {
+              "date": "2025-03-17",
+              "value": 63.6
+            },
+            {
+              "date": "2025-03-19",
+              "value": 63.62
+            },
+            {
+              "date": "2025-03-21",
+              "value": 63.65
+            },
+            {
+              "date": "2025-03-23",
+              "value": 63.71
+            },
+            {
+              "date": "2025-03-25",
+              "value": 63.8
+            },
+            {
+              "date": "2025-03-27",
+              "value": 63.9
+            },
+            {
+              "date": "2025-03-29",
+              "value": 64.01
+            },
+            {
+              "date": "2025-03-31",
+              "value": 64.12
+            },
+            {
+              "date": "2025-04-02",
+              "value": 64.23
+            },
+            {
+              "date": "2025-04-04",
+              "value": 64.33
+            },
+            {
+              "date": "2025-04-06",
+              "value": 64.42
+            },
+            {
+              "date": "2025-04-08",
+              "value": 64.49
+            },
+            {
+              "date": "2025-04-10",
+              "value": 64.55
+            },
+            {
+              "date": "2025-04-12",
+              "value": 64.61
+            },
+            {
+              "date": "2025-04-14",
+              "value": 64.66
+            },
+            {
+              "date": "2025-04-16",
+              "value": 64.71
+            },
+            {
+              "date": "2025-04-18",
+              "value": 64.76
+            },
+            {
+              "date": "2025-04-19",
+              "value": 64.83
+            },
+            {
+              "date": "2025-04-21",
+              "value": 64.92
+            },
+            {
+              "date": "2025-04-23",
+              "value": 65.02
+            },
+            {
+              "date": "2025-04-25",
+              "value": 65.13
+            },
+            {
+              "date": "2025-04-27",
+              "value": 65.25
+            },
+            {
+              "date": "2025-04-29",
+              "value": 65.37
+            },
+            {
+              "date": "2025-05-01",
+              "value": 65.48
+            },
+            {
+              "date": "2025-05-03",
+              "value": 65.58
+            },
+            {
+              "date": "2025-05-05",
+              "value": 65.65
+            },
+            {
+              "date": "2025-05-07",
+              "value": 65.69
+            },
+            {
+              "date": "2025-05-09",
+              "value": 65.7
+            },
+            {
+              "date": "2025-05-11",
+              "value": 65.67
+            },
+            {
+              "date": "2025-05-13",
+              "value": 65.61
+            },
+            {
+              "date": "2025-05-15",
+              "value": 65.52
+            },
+            {
+              "date": "2025-05-17",
+              "value": 65.42
+            },
+            {
+              "date": "2025-05-19",
+              "value": 65.3
+            },
+            {
+              "date": "2025-05-21",
+              "value": 65.2
+            },
+            {
+              "date": "2025-05-23",
+              "value": 65.11
+            },
+            {
+              "date": "2025-05-24",
+              "value": 65.04
+            },
+            {
+              "date": "2025-05-26",
+              "value": 65.01
+            },
+            {
+              "date": "2025-05-28",
+              "value": 65.01
+            },
+            {
+              "date": "2025-05-30",
+              "value": 65.05
+            },
+            {
+              "date": "2025-06-01",
+              "value": 65.12
+            },
+            {
+              "date": "2025-06-03",
+              "value": 65.21
+            },
+            {
+              "date": "2025-06-05",
+              "value": 65.33
+            },
+            {
+              "date": "2025-06-07",
+              "value": 65.45
+            },
+            {
+              "date": "2025-06-09",
+              "value": 65.57
+            },
+            {
+              "date": "2025-06-11",
+              "value": 65.67
+            },
+            {
+              "date": "2025-06-13",
+              "value": 65.76
+            },
+            {
+              "date": "2025-06-15",
+              "value": 65.83
+            },
+            {
+              "date": "2025-06-17",
+              "value": 65.87
+            },
+            {
+              "date": "2025-06-19",
+              "value": 65.89
+            },
+            {
+              "date": "2025-06-21",
+              "value": 65.88
+            },
+            {
+              "date": "2025-06-23",
+              "value": 65.87
+            },
+            {
+              "date": "2025-06-25",
+              "value": 65.84
+            },
+            {
+              "date": "2025-06-27",
+              "value": 65.82
+            }
+          ]
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "stress_index",
+        "title": "Stress Index",
+        "units": "score",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 38,
+            "label": "38",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 32,
+            "label": "32"
+          },
+          "average": {
+            "value": 36,
+            "label": "36"
+          },
+          "current": {
+            "value": 40,
+            "label": "40",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "up",
+            "delta": 2,
+            "delta_label": "+2 vs baseline"
+          },
+          "series": [
+            {
+              "date": "2025-01-05",
+              "value": 37.79
+            },
+            {
+              "date": "2025-01-06",
+              "value": 37.83
+            },
+            {
+              "date": "2025-01-08",
+              "value": 37.86
+            },
+            {
+              "date": "2025-01-10",
+              "value": 37.9
+            },
+            {
+              "date": "2025-01-12",
+              "value": 37.93
+            },
+            {
+              "date": "2025-01-14",
+              "value": 37.98
+            },
+            {
+              "date": "2025-01-16",
+              "value": 38.03
+            },
+            {
+              "date": "2025-01-18",
+              "value": 38.09
+            },
+            {
+              "date": "2025-01-20",
+              "value": 38.17
+            },
+            {
+              "date": "2025-01-22",
+              "value": 38.25
+            },
+            {
+              "date": "2025-01-24",
+              "value": 38.34
+            },
+            {
+              "date": "2025-01-26",
+              "value": 38.43
+            },
+            {
+              "date": "2025-01-28",
+              "value": 38.52
+            },
+            {
+              "date": "2025-01-30",
+              "value": 38.61
+            },
+            {
+              "date": "2025-02-01",
+              "value": 38.68
+            },
+            {
+              "date": "2025-02-03",
+              "value": 38.73
+            },
+            {
+              "date": "2025-02-05",
+              "value": 38.76
+            },
+            {
+              "date": "2025-02-07",
+              "value": 38.77
+            },
+            {
+              "date": "2025-02-08",
+              "value": 38.76
+            },
+            {
+              "date": "2025-02-10",
+              "value": 38.74
+            },
+            {
+              "date": "2025-02-12",
+              "value": 38.7
+            },
+            {
+              "date": "2025-02-14",
+              "value": 38.66
+            },
+            {
+              "date": "2025-02-16",
+              "value": 38.62
+            },
+            {
+              "date": "2025-02-18",
+              "value": 38.58
+            },
+            {
+              "date": "2025-02-20",
+              "value": 38.56
+            },
+            {
+              "date": "2025-02-22",
+              "value": 38.56
+            },
+            {
+              "date": "2025-02-24",
+              "value": 38.58
+            },
+            {
+              "date": "2025-02-26",
+              "value": 38.62
+            },
+            {
+              "date": "2025-02-28",
+              "value": 38.67
+            },
+            {
+              "date": "2025-03-02",
+              "value": 38.75
+            },
+            {
+              "date": "2025-03-04",
+              "value": 38.83
+            },
+            {
+              "date": "2025-03-06",
+              "value": 38.92
+            },
+            {
+              "date": "2025-03-08",
+              "value": 39.01
+            },
+            {
+              "date": "2025-03-10",
+              "value": 39.09
+            },
+            {
+              "date": "2025-03-12",
+              "value": 39.15
+            },
+            {
+              "date": "2025-03-14",
+              "value": 39.2
+            },
+            {
+              "date": "2025-03-15",
+              "value": 39.24
+            },
+            {
+              "date": "2025-03-17",
+              "value": 39.26
+            },
+            {
+              "date": "2025-03-19",
+              "value": 39.26
+            },
+            {
+              "date": "2025-03-21",
+              "value": 39.26
+            },
+            {
+              "date": "2025-03-23",
+              "value": 39.25
+            },
+            {
+              "date": "2025-03-25",
+              "value": 39.23
+            },
+            {
+              "date": "2025-03-27",
+              "value": 39.22
+            },
+            {
+              "date": "2025-03-29",
+              "value": 39.21
+            },
+            {
+              "date": "2025-03-31",
+              "value": 39.21
+            },
+            {
+              "date": "2025-04-02",
+              "value": 39.22
+            },
+            {
+              "date": "2025-04-04",
+              "value": 39.22
+            },
+            {
+              "date": "2025-04-06",
+              "value": 39.23
+            },
+            {
+              "date": "2025-04-08",
+              "value": 39.24
+            },
+            {
+              "date": "2025-04-10",
+              "value": 39.25
+            },
+            {
+              "date": "2025-04-12",
+              "value": 39.25
+            },
+            {
+              "date": "2025-04-14",
+              "value": 39.23
+            },
+            {
+              "date": "2025-04-16",
+              "value": 39.21
+            },
+            {
+              "date": "2025-04-18",
+              "value": 39.18
+            },
+            {
+              "date": "2025-04-19",
+              "value": 39.13
+            },
+            {
+              "date": "2025-04-21",
+              "value": 39.08
+            },
+            {
+              "date": "2025-04-23",
+              "value": 39.04
+            },
+            {
+              "date": "2025-04-25",
+              "value": 38.99
+            },
+            {
+              "date": "2025-04-27",
+              "value": 38.96
+            },
+            {
+              "date": "2025-04-29",
+              "value": 38.95
+            },
+            {
+              "date": "2025-05-01",
+              "value": 38.95
+            },
+            {
+              "date": "2025-05-03",
+              "value": 38.97
+            },
+            {
+              "date": "2025-05-05",
+              "value": 39.02
+            },
+            {
+              "date": "2025-05-07",
+              "value": 39.08
+            },
+            {
+              "date": "2025-05-09",
+              "value": 39.16
+            },
+            {
+              "date": "2025-05-11",
+              "value": 39.24
+            },
+            {
+              "date": "2025-05-13",
+              "value": 39.33
+            },
+            {
+              "date": "2025-05-15",
+              "value": 39.41
+            },
+            {
+              "date": "2025-05-17",
+              "value": 39.49
+            },
+            {
+              "date": "2025-05-19",
+              "value": 39.54
+            },
+            {
+              "date": "2025-05-21",
+              "value": 39.58
+            },
+            {
+              "date": "2025-05-23",
+              "value": 39.6
+            },
+            {
+              "date": "2025-05-24",
+              "value": 39.59
+            },
+            {
+              "date": "2025-05-26",
+              "value": 39.57
+            },
+            {
+              "date": "2025-05-28",
+              "value": 39.54
+            },
+            {
+              "date": "2025-05-30",
+              "value": 39.5
+            },
+            {
+              "date": "2025-06-01",
+              "value": 39.45
+            },
+            {
+              "date": "2025-06-03",
+              "value": 39.41
+            },
+            {
+              "date": "2025-06-05",
+              "value": 39.38
+            },
+            {
+              "date": "2025-06-07",
+              "value": 39.37
+            },
+            {
+              "date": "2025-06-09",
+              "value": 39.37
+            },
+            {
+              "date": "2025-06-11",
+              "value": 39.39
+            },
+            {
+              "date": "2025-06-13",
+              "value": 39.42
+            },
+            {
+              "date": "2025-06-15",
+              "value": 39.47
+            },
+            {
+              "date": "2025-06-17",
+              "value": 39.52
+            },
+            {
+              "date": "2025-06-19",
+              "value": 39.58
+            },
+            {
+              "date": "2025-06-21",
+              "value": 39.64
+            },
+            {
+              "date": "2025-06-23",
+              "value": 39.69
+            },
+            {
+              "date": "2025-06-25",
+              "value": 39.74
+            },
+            {
+              "date": "2025-06-27",
+              "value": 39.79
+            }
+          ]
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "Stress load elevated"
+          ]
+        }
+      }
+    ],
+    "gait_metrics": [
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "stride_length",
+        "title": "Stride Length",
+        "units": "cm",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 68,
+            "label": "68 cm",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 72,
+            "label": "72 cm"
+          },
+          "average": {
+            "value": 70,
+            "label": "70 cm"
+          },
+          "current": {
+            "value": 66,
+            "label": "66 cm",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -2,
+            "delta_label": "-2 cm vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "Stride length reduced"
+          ]
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "walking_speed",
+        "title": "Walking Speed",
+        "units": "m/s",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 1.2,
+            "label": "1.2 m/s",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 1.3,
+            "label": "1.3 m/s"
+          },
+          "average": {
+            "value": 1.15,
+            "label": "1.15 m/s"
+          },
+          "current": {
+            "value": 1.05,
+            "label": "1.05 m/s",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -0.15,
+            "delta_label": "-0.15 m/s vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "step_count",
+        "title": "Step Count",
+        "units": "steps",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 6800,
+            "label": "6,800",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 7200,
+            "label": "7,200"
+          },
+          "average": {
+            "value": 6900,
+            "label": "6,900"
+          },
+          "current": {
+            "value": 6400,
+            "label": "6,400",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -400,
+            "delta_label": "-400 vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "Step count decline"
+          ]
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "balance_stability",
+        "title": "Balance/Stability",
+        "units": "score",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 78,
+            "label": "78/100",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 82,
+            "label": "82/100"
+          },
+          "average": {
+            "value": 80,
+            "label": "80/100"
+          },
+          "current": {
+            "value": 74,
+            "label": "74/100",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -4,
+            "delta_label": "-4 vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "Balance variation"
+          ]
+        }
+      }
+    ],
+    "physical_metrics": [
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "steps_per_day",
+        "title": "Steps/Day",
+        "units": "steps",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 7500,
+            "label": "7,500",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 8200,
+            "label": "8,200"
+          },
+          "average": {
+            "value": 7600,
+            "label": "7,600"
+          },
+          "current": {
+            "value": 7000,
+            "label": "7,000",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -500,
+            "delta_label": "-500 vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "active_minutes",
+        "title": "Active Minutes",
+        "units": "min",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 62,
+            "label": "62 min",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 68,
+            "label": "68 min"
+          },
+          "average": {
+            "value": 60,
+            "label": "60 min"
+          },
+          "current": {
+            "value": 55,
+            "label": "55 min",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -7,
+            "delta_label": "-7 min vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "warning",
+          "reasons": [
+            "Activity dip"
+          ]
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "calories_burned",
+        "title": "Calories Burned",
+        "units": "kcal",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 320,
+            "label": "320 kcal",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 360,
+            "label": "360 kcal"
+          },
+          "average": {
+            "value": 330,
+            "label": "330 kcal"
+          },
+          "current": {
+            "value": 305,
+            "label": "305 kcal",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -15,
+            "delta_label": "-15 kcal vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      },
+      {
+        "schema": "metric_standard_v1",
+        "patient_id": "PAT-123",
+        "metric_key": "steps",
+        "title": "Steps",
+        "units": "steps",
+        "max_value": null,
+        "data": {
+          "baseline": {
+            "value": 4200,
+            "label": "4,200",
+            "recorded_at": "2025-01-05"
+          },
+          "cohort": {
+            "value": 4800,
+            "label": "4,800"
+          },
+          "average": {
+            "value": 4300,
+            "label": "4,300"
+          },
+          "current": {
+            "value": 3900,
+            "label": "3,900",
+            "recorded_at": "2025-06-27"
+          },
+          "timeline": {
+            "start": "2025-01-05",
+            "end": "2025-06-27",
+            "label": "2025-01-05 to 2025-06-27"
+          },
+          "trend": {
+            "direction": "down",
+            "delta": -300,
+            "delta_label": "-300 vs baseline"
+          }
+        },
+        "alerts": {
+          "status": "none",
+          "reasons": []
+        }
+      }
+    ]
+  },
+  "pulmonary": {
+    "summary": [],
+    "metrics": []
+  }
+}

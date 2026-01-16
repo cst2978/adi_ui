@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "screen": "real_time_monitoring",
+  "mode": {
+    "data_mode": "mock"
+  },
+  "sql": {
+    "connection_key": "primary_db",
+    "tables": {
+      "patient_table": {
+        "name": "patients",
+        "primary_key": "patient_id"
+      },
+      "cardiovascular_metrics_table": {
+        "name": "cardiovascular_metrics",
+        "patient_key": "patient_id"
+      }
+    },
+    "mappings": {
+      "cardiovascular_metrics": {
+        "metric_key": "metric_key",
+        "metric_value": "metric_value",
+        "metric_unit": "metric_unit",
+        "recorded_at": "recorded_at",
+        "cohort_value": "cohort_value",
+        "baseline_value": "baseline_value",
+        "average_value": "average_value"
+      }
+    }
+  },
+  "apis": {
+    "base_url": "http://localhost:3000",
+    "endpoints": {
+      "real_time_monitoring": "config/endpoints/real_time_monitoring.json"
+    }
+  },
+  "tabs": [
+    {
+      "tab_id": "cardiovascular",
+      "title": "Cardiovascular"
+    },
+    {
+      "tab_id": "pulmonary",
+      "title": "Pulmonary"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+import Link from "next/link";
+
+const flows = [
+  { label: "Patient Overview", enabled: true, href: "/patients/overview" },
+  {
+    label: "Real-time Monitoring",
+    enabled: true,
+    href: "/patients/realtime-monitoring"
+  },
+  { label: "Functional Assessment", enabled: false },
+  { label: "Biomarkers", enabled: false },
+  { label: "Multi - Omics", enabled: false },
+  { label: "Gen AI Playground", enabled: false },
+  { label: "Light Mode - Functional Assessment", enabled: false },
+  { label: "Dynamic Dashboard", enabled: false },
+  { label: "Disease Progression", enabled: false },
+  { label: "Cohort analysis", enabled: false }
+];
+
+export default function Sidebar() {
+  return (
+    <aside className="flex h-screen w-72 flex-col border-r border-white/10 bg-panel/80 px-5 py-6">
+      <div className="space-y-2">
+        <div className="text-xs uppercase tracking-[0.35em] text-ink-muted">
+          Flows
+        </div>
+        <nav className="space-y-1">
+          {flows.map((flow) => {
+            if (flow.enabled && flow.href) {
+              return (
+                <Link
+                  key={flow.label}
+                  href={flow.href}
+                  className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-ink shadow-glow transition hover:border-white/30"
+                >
+                  <span>{flow.label}</span>
+                  <span className="rounded-full bg-accent/20 px-2 py-0.5 text-[10px] uppercase tracking-widest text-ink">
+                    Live
+                  </span>
+                </Link>
+              );
+            }
+
+            return (
+              <div
+                key={flow.label}
+                className="flex cursor-not-allowed items-center justify-between rounded-xl border border-white/5 bg-panel-soft/60 px-4 py-3 text-sm text-ink-muted"
+              >
+                <span>{flow.label}</span>
+                <span className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-widest text-ink-muted">
+                  Soon
+                </span>
+              </div>
+            );
+          })}
+        </nav>
+      </div>
+      <div className="mt-auto rounded-2xl border border-white/10 bg-panel/90 p-4 text-xs text-ink-muted">
+        <p className="uppercase tracking-[0.3em]">Phase 1</p>
+        <p className="mt-2">Patient Overview enabled. Additional flows queued.</p>
+      </div>
+    </aside>
+  );
+}
