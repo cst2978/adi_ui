@@ -2,6 +2,7 @@ import type { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { getSupabaseAnonClient } from "@/lib/supabaseServer";
 
 const providers = [];
 
@@ -23,10 +24,10 @@ if (process.env.EMAIL_SERVER && process.env.EMAIL_FROM) {
   );
 }
 
-if (process.env.TEST_USER_EMAIL && process.env.TEST_USER_PASSWORD) {
+if (process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY) {
   providers.push(
     CredentialsProvider({
-      name: "Test Login",
+      name: "Email Login",
       credentials: {
         email: { label: "Email", type: "email" },
         password: { label: "Password", type: "password" }
@@ -35,19 +36,24 @@ if (process.env.TEST_USER_EMAIL && process.env.TEST_USER_PASSWORD) {
         if (!credentials?.email || !credentials.password) {
           return null;
         }
+        const supabase = getSupabaseAnonClient();
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: credentials.email,
+          password: credentials.password
+        });
 
-        const emailMatch = credentials.email === process.env.TEST_USER_EMAIL;
-        const passwordMatch =
-          credentials.password === process.env.TEST_USER_PASSWORD;
-
-        if (!emailMatch || !passwordMatch) {
+        if (error || !data.user) {
           return null;
         }
 
         return {
-          id: "test-doctor",
-          name: "Test Clinician",
-          email: credentials.email
+          id: data.user.id,
+          name:
+            data.user.user_metadata?.full_name ??
+            data.user.user_metadata?.name ??
+            data.user.email ??
+            "Clinician",
+          email: data.user.email
         };
       }
     })
@@ -61,5 +67,19 @@ export const authOptions: NextAuthOptions = {
   },
   session: {
     strategy: "jwt"
+  },
+  callbacks: {
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (session.user && token.id) {
+        session.user.id = token.id as string;
+      }
+      return session;
+    }
   }
 };

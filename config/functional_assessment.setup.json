@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "screen": "functional_assessment",
+  "mode": {
+    "data_mode": "mock"
+  },
+  "apis": {
+    "base_url": "http://localhost:3000",
+    "endpoints": {
+      "functional_assessment": "config/endpoints/functional_assessment.json"
+    }
+  }
+}

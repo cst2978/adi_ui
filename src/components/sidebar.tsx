@@ -7,14 +7,26 @@ const flows = [
     enabled: true,
     href: "/patients/realtime-monitoring"
   },
-  { label: "Functional Assessment", enabled: false },
+  {
+    label: "Functional Assessment",
+    enabled: true,
+    href: "/patients/functional-assessment"
+  },
   { label: "Biomarkers", enabled: false },
   { label: "Multi - Omics", enabled: false },
-  { label: "Gen AI Playground", enabled: false },
+  {
+    label: "Gen AI Playground",
+    enabled: true,
+    href: "/patients/gen-ai-playground"
+  },
   { label: "Light Mode - Functional Assessment", enabled: false },
   { label: "Dynamic Dashboard", enabled: false },
   { label: "Disease Progression", enabled: false },
-  { label: "Cohort analysis", enabled: false }
+  {
+    label: "Cohort Analysis",
+    enabled: true,
+    href: "/patients/cohort-analysis"
+  }
 ];
 
 export default function Sidebar() {

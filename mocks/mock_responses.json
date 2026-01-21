@@ -3826,5 +3826,532 @@
       "summary": [],
       "metrics": []
     }
+  },
+  "/api/v1/patients/PAT-123/functional-assessment": {
+    "schema": "functional_assessment_v1",
+    "patient_id": "PAT-123",
+    "updated_at": "2025-03-31T07:45:00Z",
+    "patient_header": {
+      "patient_id": "PAT-123",
+      "name": "Ethan Doe",
+      "gender": "Male",
+      "date_of_birth": "2013-04-11",
+      "diagnosis": "Duchenne Muscular Dystrophy",
+      "risk_level": "High Risk",
+      "diagnosis_date": "2016-08-14",
+      "mutation_type": "Exon 51 deletion",
+      "ambulatory_status": "Ambulatory",
+      "current_therapy": "Steroid (Deflazacort)",
+      "care_team": "Dr. Alvarez / PT: Monica Lee",
+      "test_type": "Quarterly",
+      "profile_photo_url": ""
+    },
+    "ai_summary": {
+      "schema": "ai_summary_v1",
+      "patient_id": "PAT-123",
+      "summary": "Patient shows early signs of declining lower limb function with increased upper body compensation and slower gait.",
+      "generated_at": "2025-03-31T07:45:00Z",
+      "model": "llm_summary_v1",
+      "confidence": 0.78
+    },
+    "composite_score": {
+      "value": 76,
+      "trend": "down",
+      "detail": "Declined from 84 to 76 over 6 months (down 6 pts), indicating moderate progression."
+    },
+    "kpi_tabs": [
+      "Functional Mobility KPIs",
+      "Therapy Response",
+      "Emerging risks",
+      "Predictions (KPI wise)",
+      "Care plan"
+    ],
+    "sources": {
+      "active": "Functional",
+      "options": [
+        "Functional",
+        "Clinical"
+      ]
+    },
+    "mobility_summary": {
+      "summary_date": "2025-04-25",
+      "metrics": [
+        {
+          "label": "6MWT",
+          "status": "alerts",
+          "metric": {
+            "schema": "metric_standard_v1",
+            "patient_id": "PAT-123",
+            "metric_key": "6mwt",
+            "title": "6MWT",
+            "units": "m",
+            "max_value": null,
+            "data": {
+              "baseline": {
+                "value": 328,
+                "label": "328 m",
+                "recorded_at": "2025-01-02"
+              },
+              "cohort": {
+                "value": 312,
+                "label": "312 m"
+              },
+              "average": {
+                "value": 300,
+                "label": "300 m"
+              },
+              "current": {
+                "value": 285,
+                "label": "285 m",
+                "recorded_at": "2025-06-27"
+              },
+              "timeline": {
+                "start": "2025-01-02",
+                "end": "2025-06-27",
+                "label": "2025-01-02 to 2025-06-27"
+              },
+              "trend": {
+                "direction": "down",
+                "delta": -43,
+                "delta_label": "-43 vs baseline"
+              },
+              "series": [
+                {
+                  "date": "2025-01-01",
+                  "value": 328
+                },
+                {
+                  "date": "2025-02-01",
+                  "value": 318
+                },
+                {
+                  "date": "2025-03-01",
+                  "value": 305
+                },
+                {
+                  "date": "2025-04-01",
+                  "value": 298
+                },
+                {
+                  "date": "2025-05-01",
+                  "value": 292
+                },
+                {
+                  "date": "2025-06-01",
+                  "value": 285
+                }
+              ]
+            },
+            "alerts": {
+              "status": "alerts",
+              "reasons": [
+                "Declining distance trend"
+              ]
+            }
+          }
+        },
+        {
+          "label": "NSAA",
+          "status": "alerts",
+          "metric": {
+            "schema": "metric_standard_v1",
+            "patient_id": "PAT-123",
+            "metric_key": "nsaa",
+            "title": "NSAA",
+            "units": "score",
+            "max_value": 34,
+            "data": {
+              "baseline": {
+                "value": 23,
+                "label": "23",
+                "recorded_at": "2025-01-02"
+              },
+              "cohort": {
+                "value": 21,
+                "label": "21"
+              },
+              "average": {
+                "value": 19,
+                "label": "19"
+              },
+              "current": {
+                "value": 17,
+                "label": "17",
+                "recorded_at": "2025-06-27"
+              },
+              "timeline": {
+                "start": "2025-01-02",
+                "end": "2025-06-27",
+                "label": "2025-01-02 to 2025-06-27"
+              },
+              "trend": {
+                "direction": "down",
+                "delta": -6,
+                "delta_label": "-6 vs baseline"
+              },
+              "series": [
+                {
+                  "date": "2025-01-01",
+                  "value": 23
+                },
+                {
+                  "date": "2025-02-01",
+                  "value": 22
+                },
+                {
+                  "date": "2025-03-01",
+                  "value": 20
+                },
+                {
+                  "date": "2025-04-01",
+                  "value": 19
+                },
+                {
+                  "date": "2025-05-01",
+                  "value": 18
+                },
+                {
+                  "date": "2025-06-01",
+                  "value": 17
+                }
+              ]
+            },
+            "alerts": {
+              "status": "alerts",
+              "reasons": [
+                "Progressive decline"
+              ]
+            }
+          }
+        }
+      ],
+      "note": "Mobility levels stable; mild decline in stair climbing speed and endurance over last 2 weeks."
+    },
+    "trend": {
+      "title": "Lower Limb Functional Trend",
+      "subtitle": "6MWT distance compared with cohort average",
+      "latest_value_label": "285 m",
+      "series": [
+        {
+          "date": "2025-01-01",
+          "value": 328
+        },
+        {
+          "date": "2025-02-01",
+          "value": 318
+        },
+        {
+          "date": "2025-03-01",
+          "value": 305
+        },
+        {
+          "date": "2025-04-01",
+          "value": 298
+        },
+        {
+          "date": "2025-05-01",
+          "value": 292
+        },
+        {
+          "date": "2025-06-01",
+          "value": 285
+        }
+      ],
+      "note": "Gradual decline since Feb; below cohort median by 18%."
+    },
+    "alerts": [
+      {
+        "alert": "Rhabdomyolysis potential",
+        "risk": "High",
+        "recommendation": "Reduce exertion, recheck CK in 48h"
+      },
+      {
+        "alert": "Fibrosis progressing",
+        "risk": "Moderate",
+        "recommendation": "Consider antifibrotic intervention"
+      },
+      {
+        "alert": "Grip strength stabilizing",
+        "risk": "Positive",
+        "recommendation": "Continue therapy, monitor biweekly"
+      }
+    ],
+    "videos": [
+      {
+        "label": "6MWT"
+      },
+      {
+        "label": "Sit to Stand"
+      },
+      {
+        "label": "Stair Climb"
+      },
+      {
+        "label": "Reach / ULF"
+      },
+      {
+        "label": "Rise Test"
+      }
+    ],
+    "video_note": "Declined from 84 to 76 over 6 months (down 6 pts), indicating moderate progression."
+  },
+  "/api/v1/patients/PAT-456/functional-assessment": {
+    "schema": "functional_assessment_v1",
+    "patient_id": "PAT-456",
+    "updated_at": "2025-04-12T09:20:00Z",
+    "patient_header": {
+      "patient_id": "PAT-456",
+      "name": "Ava Smith",
+      "gender": "Female",
+      "date_of_birth": "2011-11-02",
+      "diagnosis": "Duchenne Muscular Dystrophy",
+      "risk_level": "Moderate Risk",
+      "diagnosis_date": "2015-05-22",
+      "mutation_type": "Exon 45 deletion",
+      "ambulatory_status": "Ambulatory",
+      "current_therapy": "Gene Therapy Trial A",
+      "care_team": "Dr. Chen / PT: Diego Park",
+      "test_type": "Monthly",
+      "profile_photo_url": ""
+    },
+    "ai_summary": {
+      "schema": "ai_summary_v1",
+      "patient_id": "PAT-456",
+      "summary": "Functional mobility remains stable with slight improvements in endurance over the last quarter.",
+      "generated_at": "2025-04-12T09:20:00Z",
+      "model": "llm_summary_v1",
+      "confidence": 0.82
+    },
+    "composite_score": {
+      "value": 82,
+      "trend": "up",
+      "detail": "Improved from 79 to 82 over 6 months (up 3 pts), indicating positive response."
+    },
+    "kpi_tabs": [
+      "Functional Mobility KPIs",
+      "Therapy Response",
+      "Emerging risks",
+      "Predictions (KPI wise)",
+      "Care plan"
+    ],
+    "sources": {
+      "active": "Functional",
+      "options": [
+        "Functional",
+        "Clinical"
+      ]
+    },
+    "mobility_summary": {
+      "summary_date": "2025-04-10",
+      "metrics": [
+        {
+          "label": "6MWT",
+          "status": "ok",
+          "metric": {
+            "schema": "metric_standard_v1",
+            "patient_id": "PAT-456",
+            "metric_key": "6mwt",
+            "title": "6MWT",
+            "units": "m",
+            "max_value": null,
+            "data": {
+              "baseline": {
+                "value": 300,
+                "label": "300 m",
+                "recorded_at": "2025-01-10"
+              },
+              "cohort": {
+                "value": 312,
+                "label": "312 m"
+              },
+              "average": {
+                "value": 305,
+                "label": "305 m"
+              },
+              "current": {
+                "value": 315,
+                "label": "315 m",
+                "recorded_at": "2025-06-30"
+              },
+              "timeline": {
+                "start": "2025-01-10",
+                "end": "2025-06-30",
+                "label": "2025-01-10 to 2025-06-30"
+              },
+              "trend": {
+                "direction": "up",
+                "delta": 15,
+                "delta_label": "+15 vs baseline"
+              },
+              "series": [
+                {
+                  "date": "2025-01-01",
+                  "value": 300
+                },
+                {
+                  "date": "2025-02-01",
+                  "value": 304
+                },
+                {
+                  "date": "2025-03-01",
+                  "value": 307
+                },
+                {
+                  "date": "2025-04-01",
+                  "value": 310
+                },
+                {
+                  "date": "2025-05-01",
+                  "value": 312
+                },
+                {
+                  "date": "2025-06-01",
+                  "value": 315
+                }
+              ]
+            },
+            "alerts": {
+              "status": "none",
+              "reasons": []
+            }
+          }
+        },
+        {
+          "label": "NSAA",
+          "status": "ok",
+          "metric": {
+            "schema": "metric_standard_v1",
+            "patient_id": "PAT-456",
+            "metric_key": "nsaa",
+            "title": "NSAA",
+            "units": "score",
+            "max_value": 34,
+            "data": {
+              "baseline": {
+                "value": 20,
+                "label": "20",
+                "recorded_at": "2025-01-10"
+              },
+              "cohort": {
+                "value": 21,
+                "label": "21"
+              },
+              "average": {
+                "value": 19,
+                "label": "19"
+              },
+              "current": {
+                "value": 22,
+                "label": "22",
+                "recorded_at": "2025-06-30"
+              },
+              "timeline": {
+                "start": "2025-01-10",
+                "end": "2025-06-30",
+                "label": "2025-01-10 to 2025-06-30"
+              },
+              "trend": {
+                "direction": "up",
+                "delta": 2,
+                "delta_label": "+2 vs baseline"
+              },
+              "series": [
+                {
+                  "date": "2025-01-01",
+                  "value": 20
+                },
+                {
+                  "date": "2025-02-01",
+                  "value": 20
+                },
+                {
+                  "date": "2025-03-01",
+                  "value": 21
+                },
+                {
+                  "date": "2025-04-01",
+                  "value": 21
+                },
+                {
+                  "date": "2025-05-01",
+                  "value": 22
+                },
+                {
+                  "date": "2025-06-01",
+                  "value": 22
+                }
+              ]
+            },
+            "alerts": {
+              "status": "none",
+              "reasons": []
+            }
+          }
+        }
+      ],
+      "note": "Functional mobility steady with mild gains in endurance and gait efficiency."
+    },
+    "trend": {
+      "title": "Lower Limb Functional Trend",
+      "subtitle": "6MWT distance compared with cohort average",
+      "latest_value_label": "315 m",
+      "series": [
+        {
+          "date": "2025-01-01",
+          "value": 300
+        },
+        {
+          "date": "2025-02-01",
+          "value": 304
+        },
+        {
+          "date": "2025-03-01",
+          "value": 307
+        },
+        {
+          "date": "2025-04-01",
+          "value": 310
+        },
+        {
+          "date": "2025-05-01",
+          "value": 312
+        },
+        {
+          "date": "2025-06-01",
+          "value": 315
+        }
+      ],
+      "note": "Positive trajectory since Feb; above cohort median by 8%."
+    },
+    "alerts": [
+      {
+        "alert": "Endurance plateau",
+        "risk": "Moderate",
+        "recommendation": "Maintain therapy plan and monitor fatigue"
+      },
+      {
+        "alert": "Stride asymmetry improving",
+        "risk": "Positive",
+        "recommendation": "Continue strength conditioning"
+      }
+    ],
+    "videos": [
+      {
+        "label": "6MWT"
+      },
+      {
+        "label": "Sit to Stand"
+      },
+      {
+        "label": "Stair Climb"
+      },
+      {
+        "label": "Reach / ULF"
+      },
+      {
+        "label": "Rise Test"
+      }
+    ],
+    "video_note": "Improvement in composite score aligns with therapy response trends."
   }
 }

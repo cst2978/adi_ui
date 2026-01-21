@@ -1,22 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 
 type SignInPanelProps = {
   googleEnabled: boolean;
   credentialsEnabled: boolean;
-  testDefaults?: {
-    email: string;
-    password: string;
-  } | null;
 };
 
 export default function SignInPanel({
   googleEnabled,
-  credentialsEnabled,
-  testDefaults
+  credentialsEnabled
 }: SignInPanelProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -122,24 +118,32 @@ export default function SignInPanel({
               >
                 Sign in
               </button>
-              {testDefaults ? (
-                <button
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-ink-muted transition hover:border-white/20 hover:text-ink"
-                  type="button"
-                  onClick={() => {
-                    setEmail(testDefaults.email);
-                    setPassword(testDefaults.password);
-                  }}
-                >
-                  New user sign-on (test)
-                </button>
-              ) : null}
               {!credentialsEnabled ? (
                 <p className="text-xs text-warning">
-                  Set TEST_USER_EMAIL and TEST_USER_PASSWORD to enable test
+                  Set SUPABASE_URL and SUPABASE_ANON_KEY to enable Supabase
                   login.
                 </p>
               ) : null}
+              <p className="text-xs text-ink-muted">
+                Forgot your password?{" "}
+                <Link
+                  className="text-ink underline underline-offset-4"
+                  href="/auth/reset-password"
+                >
+                  Reset it
+                </Link>
+                .
+              </p>
+              <p className="text-xs text-ink-muted">
+                New here?{" "}
+                <Link
+                  className="text-ink underline underline-offset-4"
+                  href="/auth/register"
+                >
+                  Create an account
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

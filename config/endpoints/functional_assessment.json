@@ -1,0 +1,5 @@
+{
+  "method": "POST",
+  "path": "/api/v1/patients/{patient_id}/functional-assessment",
+  "response_schema": "functional_assessment_v1"
+}

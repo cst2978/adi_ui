@@ -14,7 +14,7 @@ export default async function SignInPage() {
     process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET
   );
   const credentialsEnabled = Boolean(
-    process.env.TEST_USER_EMAIL && process.env.TEST_USER_PASSWORD
+    process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY
   );
 
   return (
@@ -22,14 +22,6 @@ export default async function SignInPage() {
       <SignInPanel
         googleEnabled={googleEnabled}
         credentialsEnabled={credentialsEnabled}
-        testDefaults={
-          credentialsEnabled
-            ? {
-                email: process.env.TEST_USER_EMAIL ?? "",
-                password: process.env.TEST_USER_PASSWORD ?? ""
-              }
-            : null
-        }
       />
     </div>
   );
