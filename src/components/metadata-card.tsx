@@ -15,10 +15,8 @@ const metadataFields = [
 
 export default function MetadataCard({ header }: MetadataCardProps) {
   return (
-    <section className="h-full rounded-2xl border border-white/10 bg-panel/90 p-6 shadow-card">
-      <h3 className="text-sm uppercase tracking-[0.3em] text-ink-muted">
-        Patient Metadata
-      </h3>
+    <section className="ds-card h-full p-6">
+      <h3 className="ds-label">Patient Metadata</h3>
       <div className="mt-4 space-y-4 text-sm">
         {metadataFields.map((field) => {
           const rawValue = header[field.key] ?? "N/A";
@@ -26,10 +24,8 @@ export default function MetadataCard({ header }: MetadataCardProps) {
 
           return (
             <div key={field.key} className="flex items-start justify-between">
-              <span className="text-xs uppercase tracking-[0.2em] text-ink-muted">
-                {field.label}
-              </span>
-              <span className="max-w-[60%] text-right text-ink">{value}</span>
+              <span className="ds-label">{field.label}</span>
+              <span className="max-w-[60%] text-right ds-value">{value}</span>
             </div>
           );
         })}

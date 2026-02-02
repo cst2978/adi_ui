@@ -23,11 +23,9 @@ export default function PatientSelector({
 
   return (
     <div className="flex items-center gap-3">
-      <label className="text-xs uppercase tracking-[0.3em] text-ink-muted">
-        Patient
-      </label>
+      <label className="ds-label">Patient</label>
       <select
-        className="rounded-xl border border-white/10 bg-panel-soft px-4 py-2 text-sm text-ink outline-none"
+        className="ds-input"
         value={selectedId}
         onChange={(event) => {
           const params = new URLSearchParams(searchParams?.toString());

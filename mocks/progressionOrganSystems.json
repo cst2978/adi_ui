@@ -1,0 +1,389 @@
+{
+  "patientId": "PAT-123",
+  "layout": {
+    "navRail": {
+      "logoUrl": "https://www.figma.com/api/mcp/asset/8d91be40-6ae3-4652-8f4f-16d99a691f75",
+      "primaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/8389e259-b5eb-4a6e-85d3-17b89af1858c" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d73b64cb-be56-4ff5-8c90-eb0025a7b956" },
+        {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/3ca0fd27-d4ed-426a-b833-8569b52c8b59",
+          "active": true
+        },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/3fa57301-b1a1-4617-a298-b986d6e9dd18" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/10276e97-68d1-459d-a30d-997377e3097d" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/65f5c391-5913-4f9d-9a7f-8fb37b537af9" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d73b64cb-be56-4ff5-8c90-eb0025a7b956" }
+      ],
+      "middleImageUrl": "https://www.figma.com/api/mcp/asset/a27cd793-991e-440f-a155-075749af0baa",
+      "secondaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/6e992c0a-bfb4-4b46-a5fc-f698e384cab1" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/65f5c391-5913-4f9d-9a7f-8fb37b537af9" }
+      ]
+    },
+    "topBar": {
+      "navItems": [
+        {
+          "label": "Patients",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/a6d04142-31a3-4c71-bf1b-471d1f624bda",
+          "active": true,
+          "activeGradient": "linear-gradient(255deg, #2bdbd3 6%, #73d5ff 96%)"
+        },
+        {
+          "label": "Cohort Analytics",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/e368ee88-a1c2-4e0b-9e12-7e1473008bcb",
+          "active": false
+        },
+        {
+          "label": "Gen AI Playground",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/62578060-e5a1-44c5-910c-0a0aaa891ca3",
+          "active": false
+        }
+      ],
+      "user": {
+        "name": "Dr. Jane Doe",
+        "role": "Pediatric Pulmonologist",
+        "avatarUrl": "https://www.figma.com/api/mcp/asset/7573e1e3-7f4a-4f00-8f12-04218dfa512c",
+        "menuIconUrl": "https://www.figma.com/api/mcp/asset/1a4bb6c3-547e-4164-8f9b-3d28c486630d"
+      },
+      "notificationIconUrl": "https://www.figma.com/api/mcp/asset/1769e92f-8ac9-49eb-aeba-8b1d7ad55af8",
+      "settingsIconUrl": "https://www.figma.com/api/mcp/asset/d2d6c1d4-4fed-4f83-b166-a979f02fefd2"
+    },
+    "actionRail": {
+      "toggleIconUrl": "https://www.figma.com/api/mcp/asset/f503a2ce-3367-49fa-8733-d864bf3cada1",
+      "items": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/9bfaf55a-5756-414c-ac57-8ae2d46a7f27" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/006c82f7-acc1-4caf-a489-3d597bf9a3af" }
+      ]
+    }
+  },
+  "header": {
+    "title": "Progression",
+    "breadcrumb": {
+      "items": ["Progression", "Organ System"],
+      "separatorIconUrl": "https://www.figma.com/api/mcp/asset/66b1d271-8e62-49c3-8066-10ebcfff726d"
+    },
+    "search": {
+      "placeholder": "Search patients, biomarkers, therapies, alerts, videos ...",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/d2b3e771-7c95-4149-a2da-b289bcebafc5"
+    },
+    "filter": {
+      "label": "Filters",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/fd957d47-efae-4d2d-9c87-72a85df1440f"
+    }
+  },
+  "tabs": [
+    { "label": "Overview", "href": "/patient/PAT-123/progression/overview" },
+    { "label": "Functional", "href": "/patient/PAT-123/progression/functional" },
+    { "label": "Biomarkers", "href": "/patient/PAT-123/progression/biomarkers" },
+    { "label": "Organ Systems", "href": "/patient/PAT-123/progression/organ-systems" },
+    { "label": "Video Analytics", "href": "/patient/PAT-123/progression/video-analytics" },
+    { "label": "Timeline", "href": "/patient/PAT-123/progression/timeline" }
+  ],
+  "patientSummary": {
+    "backgroundUrl": "https://www.figma.com/api/mcp/asset/9eb1b69b-cb48-4154-93a6-50ffea9625f6",
+    "avatarUrl": "https://www.figma.com/api/mcp/asset/9b398585-9eca-403e-9230-63cc5b66edd3",
+    "name": "Ethan Doe",
+    "genderBadge": "M",
+    "birthInfo": "8-Jul-2021- 3y 9m",
+    "diagnosis": "Duchenne Muscular Disease",
+    "risk": {
+      "label": "High Risk",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/38873d83-89d9-4dd0-9544-1c23abf8f540",
+      "tone": "critical"
+    },
+    "cta": {
+      "label": "Full Details",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/d97ee236-60fc-4079-a42c-5f51b045ba90"
+    }
+  },
+  "aiSummary": {
+    "title": "AI Summary",
+    "text": "Patient shows mild decline in mobility and lung function over 6 months. Gene therapy response is positive, but steroid-related side effects (elevated CK, ALT) are emerging. Monitoring and dosage adjustment recommended."
+  },
+  "compositeScore": {
+    "title": "Composite Functional Score",
+    "value": "76",
+    "delta": "-6",
+    "deltaIconUrl": "https://www.figma.com/api/mcp/asset/c0dc2ad2-f1b3-4489-a46c-96667744e237",
+    "trend": "Declined from 84 to 76 over 6 months (-6 pts)",
+    "links": [
+      {
+        "label": "Score breakdown",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447"
+      },
+      {
+        "label": "Functional Domains",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447"
+      },
+      {
+        "label": "Sources",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447"
+      }
+    ]
+  },
+  "segments": [
+    {
+      "key": "pulmonary",
+      "label": "Pulmonary",
+      "active": true,
+      "metricsSection": {
+        "title": "Pulmonary Metrics",
+        "rangeTabs": [
+          { "label": "D" },
+          { "label": "W" },
+          { "label": "M" },
+          { "label": "3M" },
+          { "label": "6M", "active": true },
+          { "label": "Y" }
+        ],
+        "dateRange": {
+          "label": "Jan 2 - Jun 27, 2025",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/813fc87c-3deb-406d-abb8-9f1728fd5d44"
+        },
+        "nav": {
+          "previousIconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447",
+          "nextIconUrl": "https://www.figma.com/api/mcp/asset/166ef693-0276-4815-af8c-1e1581914b51"
+        },
+        "cards": [
+          {
+            "title": "FVC",
+            "alert": { "label": "Alerts", "tone": "critical" },
+            "latest": {
+              "label": "Latest",
+              "value": "62 %",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "66 %",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "64 %" },
+            "baseline": { "label": "Baseline", "value": "73 %" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          },
+          {
+            "title": "Peak Cough Flow",
+            "alert": { "label": "Alerts", "tone": "warning" },
+            "latest": {
+              "label": "Latest",
+              "value": "170 L/min",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "180 L/min",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "190 L/min" },
+            "baseline": { "label": "Baseline", "value": "220 L/min" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          },
+          {
+            "title": "Respiratory Rate",
+            "alert": { "label": "Alerts", "tone": "warning" },
+            "latest": {
+              "label": "Latest",
+              "value": "23 bpm",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "21 bpm",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "20 bpm" },
+            "baseline": { "label": "Baseline", "value": "19 bpm" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          },
+          {
+            "title": "SpO2",
+            "alert": { "label": "Alerts", "tone": "critical" },
+            "latest": {
+              "label": "Latest",
+              "value": "95 %",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "96 %",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "96 %" },
+            "baseline": { "label": "Baseline", "value": "97 %" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "cardiovascular",
+      "label": "Cardiovascular",
+      "metricsSection": {
+        "title": "Cardiovascular Metrics",
+        "rangeTabs": [
+          { "label": "D" },
+          { "label": "W" },
+          { "label": "M" },
+          { "label": "3M" },
+          { "label": "6M", "active": true },
+          { "label": "Y" }
+        ],
+        "dateRange": {
+          "label": "Jan 2 - Jun 27, 2025",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/813fc87c-3deb-406d-abb8-9f1728fd5d44"
+        },
+        "nav": {
+          "previousIconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447",
+          "nextIconUrl": "https://www.figma.com/api/mcp/asset/166ef693-0276-4815-af8c-1e1581914b51"
+        },
+        "cards": [
+          {
+            "title": "HR (Rest)",
+            "alert": { "label": "Alerts", "tone": "critical" },
+            "latest": {
+              "label": "Latest",
+              "value": "98 bpm",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "95 bpm",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "90 bpm" },
+            "baseline": { "label": "Baseline", "value": "95 bpm" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          },
+          {
+            "title": "HR Variability",
+            "alert": { "label": "Alerts", "tone": "warning" },
+            "latest": {
+              "label": "Latest",
+              "value": "135 bpm",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "140 bpm",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "140 bpm" },
+            "baseline": { "label": "Baseline", "value": "138 bpm" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          },
+          {
+            "title": "Pulse Pressure",
+            "alert": { "label": "Alerts", "tone": "warning" },
+            "latest": {
+              "label": "Latest",
+              "value": "30 ms",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "28 ms",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "40 ms" },
+            "baseline": { "label": "Baseline", "value": "42 ms" },
+            "yAxisLabels": ["160", "120", "80", "40"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          },
+          {
+            "title": "Blood Pressure (SBP/DBP)",
+            "alert": { "label": "Alerts", "tone": "critical" },
+            "latest": {
+              "label": "Latest",
+              "value": "112/78 mmHg",
+              "timestamp": "27 JUN 21:35 PM",
+              "trendIconUrl": "https://www.figma.com/api/mcp/asset/341acb32-87fe-42c8-95f9-0bd956df9636"
+            },
+            "average": {
+              "label": "Average",
+              "value": "108/75 mmHg",
+              "timestamp": "2 JAN - 27 JUN, 2025"
+            },
+            "cohort": { "label": "Cohort", "value": "95/60 mmHg" },
+            "baseline": { "label": "Baseline", "value": "96/58 mmHg" },
+            "yAxisLabels": ["180", "150", "120", "90", "60"],
+            "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "placeholder": "Chart placeholder",
+            "legend": [
+              { "label": "Systolic", "color": "#3b9eff" },
+              { "label": "Diastolic", "color": "#e27ac3" }
+            ],
+            "callout": {
+              "iconUrl": "https://www.figma.com/api/mcp/asset/3da1a1aa-ceef-43d0-9d75-cba1e493ebbb",
+              "text": "Gradual decline since Feb; below cohort median by 18%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "other",
+      "label": "Other",
+      "metricsSection": {
+        "title": "Other Metrics",
+        "rangeTabs": [],
+        "dateRange": { "label": "", "iconUrl": "" },
+        "nav": { "previousIconUrl": "", "nextIconUrl": "" },
+        "cards": []
+      }
+    }
+  ],
+  "emptyState": {
+    "title": "No organ system data",
+    "description": "Add organ system metrics to populate this view."
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "patientId": "PAT-123",
+  "layout": {
+    "navRail": {
+      "logoUrl": "https://www.figma.com/api/mcp/asset/8d91be40-6ae3-4652-8f4f-16d99a691f75",
+      "primaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/8389e259-b5eb-4a6e-85d3-17b89af1858c" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d73b64cb-be56-4ff5-8c90-eb0025a7b956" },
+        {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/3ca0fd27-d4ed-426a-b833-8569b52c8b59",
+          "active": true
+        },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/3fa57301-b1a1-4617-a298-b986d6e9dd18" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/10276e97-68d1-459d-a30d-997377e3097d" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/65f5c391-5913-4f9d-9a7f-8fb37b537af9" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d73b64cb-be56-4ff5-8c90-eb0025a7b956" }
+      ],
+      "middleImageUrl": "https://www.figma.com/api/mcp/asset/a27cd793-991e-440f-a155-075749af0baa",
+      "secondaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/6e992c0a-bfb4-4b46-a5fc-f698e384cab1" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/65f5c391-5913-4f9d-9a7f-8fb37b537af9" }
+      ]
+    },
+    "topBar": {
+      "navItems": [
+        {
+          "label": "Patients",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/a6d04142-31a3-4c71-bf1b-471d1f624bda",
+          "active": true,
+          "activeGradient": "linear-gradient(255deg, #2bdbd3 6%, #73d5ff 96%)"
+        },
+        {
+          "label": "Cohort Analytics",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/e368ee88-a1c2-4e0b-9e12-7e1473008bcb",
+          "active": false
+        },
+        {
+          "label": "Gen AI Playground",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/62578060-e5a1-44c5-910c-0a0aaa891ca3",
+          "active": false
+        }
+      ],
+      "user": {
+        "name": "Dr. Jane Doe",
+        "role": "Pediatric Pulmonologist",
+        "avatarUrl": "https://www.figma.com/api/mcp/asset/7573e1e3-7f4a-4f00-8f12-04218dfa512c",
+        "menuIconUrl": "https://www.figma.com/api/mcp/asset/1a4bb6c3-547e-4164-8f9b-3d28c486630d"
+      },
+      "notificationIconUrl": "https://www.figma.com/api/mcp/asset/1769e92f-8ac9-49eb-aeba-8b1d7ad55af8",
+      "settingsIconUrl": "https://www.figma.com/api/mcp/asset/d2d6c1d4-4fed-4f83-b166-a979f02fefd2"
+    },
+    "actionRail": {
+      "toggleIconUrl": "https://www.figma.com/api/mcp/asset/f503a2ce-3367-49fa-8733-d864bf3cada1",
+      "items": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/9bfaf55a-5756-414c-ac57-8ae2d46a7f27" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/006c82f7-acc1-4caf-a489-3d597bf9a3af" }
+      ]
+    }
+  },
+  "header": {
+    "title": "Progression",
+    "breadcrumb": {
+      "items": ["Progression", "Video Analytics"],
+      "separatorIconUrl": "https://www.figma.com/api/mcp/asset/66b1d271-8e62-49c3-8066-10ebcfff726d"
+    },
+    "search": {
+      "placeholder": "Search patients, biomarkers, therapies, alerts, videos ...",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/d2b3e771-7c95-4149-a2da-b289bcebafc5"
+    },
+    "filter": {
+      "label": "Filters",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/fd957d47-efae-4d2d-9c87-72a85df1440f"
+    }
+  },
+  "tabs": [
+    { "label": "Overview", "href": "/patient/PAT-123/progression/overview" },
+    { "label": "Functional", "href": "/patient/PAT-123/progression/functional" },
+    { "label": "Biomarkers", "href": "/patient/PAT-123/progression/biomarkers" },
+    { "label": "Organ Systems", "href": "/patient/PAT-123/progression/organ-systems" },
+    { "label": "Video Analytics", "href": "/patient/PAT-123/progression/video-analytics" },
+    { "label": "Timeline", "href": "/patient/PAT-123/progression/timeline" }
+  ],
+  "patientSummary": {
+    "backgroundUrl": "https://www.figma.com/api/mcp/asset/9eb1b69b-cb48-4154-93a6-50ffea9625f6",
+    "avatarUrl": "https://www.figma.com/api/mcp/asset/9b398585-9eca-403e-9230-63cc5b66edd3",
+    "name": "Ethan Doe",
+    "genderBadge": "M",
+    "birthInfo": "8-Jul-2021- 3y 9m",
+    "diagnosis": "Duchenne Muscular Disease",
+    "risk": {
+      "label": "High Risk",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/38873d83-89d9-4dd0-9544-1c23abf8f540",
+      "tone": "critical"
+    },
+    "cta": {
+      "label": "Full Details",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/d97ee236-60fc-4079-a42c-5f51b045ba90"
+    }
+  },
+  "aiSummary": {
+    "title": "AI Summary",
+    "text": "Patient shows mild decline in mobility and lung function over 6 months. Gene therapy response is positive, but steroid-related side effects (elevated CK, ALT) are emerging. Monitoring and dosage adjustment recommended."
+  },
+  "compositeScore": {
+    "title": "Composite Functional Score",
+    "value": "76",
+    "delta": "-6",
+    "deltaIconUrl": "https://www.figma.com/api/mcp/asset/c0dc2ad2-f1b3-4489-a46c-96667744e237",
+    "trend": "Declined from 84 to 76 over 6 months (-6 pts)",
+    "links": [
+      {
+        "label": "Score breakdown",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447"
+      },
+      {
+        "label": "Functional Domains",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447"
+      },
+      {
+        "label": "Sources",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/2df6a641-e160-4a9c-bf0f-ef56a3ffb447"
+      }
+    ]
+  },
+  "controls": {
+    "rangeTabs": [
+      { "label": "D" },
+      { "label": "W" },
+      { "label": "M" },
+      { "label": "3M", "active": true },
+      { "label": "6M" },
+      { "label": "Y" }
+    ],
+    "dateRange": {
+      "label": "Feb 10 - May 02, 2025",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/9bf1a6b7-cc14-4de0-8d23-3977883ad370"
+    },
+    "sources": {
+      "label": "Sources",
+      "options": [
+        { "label": "Functional" },
+        { "label": "Clinical", "active": true }
+      ]
+    },
+    "visits": { "count": "3", "label": "Visits" },
+    "action": {
+      "label": "New Video",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/4d3b1e17-3892-4a7c-a53c-41146f695d81"
+    }
+  },
+  "viewTabs": [
+    { "label": "Dashboard View" },
+    { "label": "Video Breakdown", "active": true }
+  ],
+  "videoSection": {
+    "title": "Sit - to - Stand Score",
+    "player": {
+      "posterUrl": "https://www.figma.com/api/mcp/asset/e8d3fcd6-4466-4b0c-8230-ffb4a7b5e904",
+      "timelineUrl": "https://www.figma.com/api/mcp/asset/51074465-e735-4896-9e0e-0802c0bacc00",
+      "timeLabel": "5 : 09 / 7:00",
+      "playIconUrl": "https://www.figma.com/api/mcp/asset/2224763b-dfa5-4974-98e8-7f9fe7978e7e",
+      "speakerIconUrl": "https://www.figma.com/api/mcp/asset/9bf403b7-d925-4e40-94e7-7009c615f74b",
+      "expandIconUrl": "https://www.figma.com/api/mcp/asset/dab620b4-b01a-4d22-84da-da8d56b28287",
+      "blurToggle": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/975f2e4d-e4f0-4392-bd48-935e41c53ba8",
+        "label": "Blur face"
+      },
+      "flagButton": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/62f712b8-0e84-4f6e-a7f6-1e73201e3d17",
+        "label": "Flag Frame"
+      },
+      "markerIconUrl": "https://www.figma.com/api/mcp/asset/bf10a203-47c6-4386-b0f2-403f424c76af"
+    },
+    "notesPanel": {
+      "tabs": [
+        { "label": "Notes", "active": true },
+        { "label": "AI Observations" }
+      ],
+      "notes": [
+        {
+          "author": "Dr. Aisha Mehta",
+          "authorIconUrl": "https://www.figma.com/api/mcp/asset/6416fce5-07f9-44cb-a1f8-f442d63b9465",
+          "date": "Apr 15, 2025 – Week 37",
+          "text": "Patient demonstrates increased fatigue during sit-to-stand transitions compared to previous month. Recommend repeat CK and ALT test. Flag for potential steroid adjustment."
+        },
+        {
+          "author": "Samir Rao, PT",
+          "authorIconUrl": "https://www.figma.com/api/mcp/asset/6416fce5-07f9-44cb-a1f8-f442d63b9465",
+          "date": "Apr 15, 2025 – Week 37",
+          "text": "Noted compensatory use of arms while rising from chair. Gower’s sign more pronounced. Will update home exercise plan and increase frequency of assisted stair practice."
+        },
+        {
+          "author": "AdiLabs Agentic AI",
+          "authorIconUrl": "https://www.figma.com/api/mcp/asset/ba0ed97f-86fa-498f-b89c-7da137384d5a",
+          "date": "Apr 15, 2025 – Week 37",
+          "text": "Detected 14% slower transition time from floor to stand compared to baseline video on Jan 12. Consistent with trend in declining PUL score."
+        }
+      ]
+    }
+  },
+  "otherVideos": {
+    "title": "Other Videos from Visit - May 10, 2025",
+    "countLabel": "5 videos captured",
+    "nextIconUrl": "https://www.figma.com/api/mcp/asset/09cfe16a-579f-4c85-973e-75cfc1f5086f",
+    "items": [
+      {
+        "title": "Sit - to - Stand",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254",
+        "active": true
+      },
+      {
+        "title": "Stair Climb",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      },
+      {
+        "title": "Stair Climb",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      },
+      {
+        "title": "6MWT",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      },
+      {
+        "title": "6MWT",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      },
+      {
+        "title": "Reach Test",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      },
+      {
+        "title": "Reach Test",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      },
+      {
+        "title": "Reach Test",
+        "thumbnailUrl": "https://www.figma.com/api/mcp/asset/dc8dc4b1-a469-4168-ba56-d2f255567b3c",
+        "playIconUrl": "https://www.figma.com/api/mcp/asset/5df36097-65de-4314-9c82-d5ad8150f254"
+      }
+    ]
+  },
+  "metricsTabs": {
+    "tabs": [
+      { "label": "Metrics", "active": true },
+      { "label": "Alerts" },
+      { "label": "Care plan" }
+    ],
+    "description": "Tracks changes in core motor functions over time based on clinical and at-home assessments to identify deterioration, stability, or improvement in ambulation and physical capacity."
+  },
+  "metricGroups": [
+    {
+      "title": "Core Mobility",
+      "cards": [
+        {
+          "title": "Time to Complete",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "32.5 s",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/e7aa42b1-74e3-45be-a7df-8784949d947e"
+          },
+          "cohort": { "label": "Cohort", "value": "34.0 s" },
+          "baseline": { "label": "Baseline", "value": "34.0 s" }
+        },
+        {
+          "title": "NSAA Sit-Stand Score",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "1.4 /2",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/c3bc81b3-bbd0-4e96-94ab-a222cd270f23"
+          },
+          "cohort": { "label": "Cohort", "value": "1/2" },
+          "baseline": { "label": "Baseline", "value": "1/2" }
+        },
+        {
+          "title": "Balance Score",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "82 /100",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/8d5643f7-b693-4260-990b-4c62139e1759"
+          },
+          "cohort": { "label": "Cohort", "value": "72/100" },
+          "baseline": { "label": "Baseline", "value": "64/100" }
+        },
+        {
+          "title": "Total Assistance Score",
+          "alert": { "label": "Alerts", "tone": "warning" },
+          "latest": {
+            "label": "Latest",
+            "value": "1.1 /3",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/8d5643f7-b693-4260-990b-4c62139e1759"
+          },
+          "cohort": { "label": "Cohort", "value": "1.3/3" },
+          "baseline": { "label": "Baseline", "value": "0.8/3" }
+        }
+      ]
+    },
+    {
+      "title": "Postural Control",
+      "cards": [
+        {
+          "title": "Trunk Lean Angle",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "28.5 deg",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/c3bc81b3-bbd0-4e96-94ab-a222cd270f23"
+          },
+          "cohort": { "label": "Cohort", "value": "17.3 deg" },
+          "baseline": { "label": "Baseline", "value": "13.8 deg" }
+        },
+        {
+          "title": "Pelvic Tilt",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "7.2 deg",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/8d5643f7-b693-4260-990b-4c62139e1759"
+          },
+          "cohort": { "label": "Cohort", "value": "4.6 deg" },
+          "baseline": { "label": "Baseline", "value": "2.8 deg" }
+        },
+        {
+          "title": "Step Symmetry Index",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "0.82 /1",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/c3bc81b3-bbd0-4e96-94ab-a222cd270f23"
+          },
+          "cohort": { "label": "Cohort", "value": "0.92/1" },
+          "baseline": { "label": "Baseline", "value": "0.96/1" }
+        },
+        {
+          "title": "Postural Sway",
+          "alert": { "label": "Alerts", "tone": "critical" },
+          "latest": {
+            "label": "Latest",
+            "value": "3.2 deg",
+            "timestamp": "27 JUN 21:35 PM",
+            "trendIconUrl": "https://www.figma.com/api/mcp/asset/c3bc81b3-bbd0-4e96-94ab-a222cd270f23"
+          },
+          "cohort": { "label": "Cohort", "value": "2.1 deg" },
+          "baseline": { "label": "Baseline", "value": "1.4 deg" }
+        }
+      ]
+    }
+  ],
+  "chartPanels": [
+    {
+      "title": "NSAA STS Score",
+      "current": {
+        "label": "Current",
+        "date": "Feb 10",
+        "value": "1.4",
+        "trendIconUrl": "https://www.figma.com/api/mcp/asset/07cc3f06-b0cd-4eef-bb89-7a168d081045"
+      },
+      "lastVisits": {
+        "title": "Last 3 visits",
+        "cohort": { "label": "Cohort", "value": "1.2" },
+        "baseline": { "label": "Baseline", "value": "1.2" },
+        "visits": [
+          { "label": "Feb 10", "value": "1.2" },
+          { "label": "Apr 5", "value": "1.3" },
+          { "label": "May 2", "value": "1.4" }
+        ]
+      },
+      "yAxisLabels": ["2", "1", "0"],
+      "xAxisLabels": ["Feb", "Apr", "May"],
+      "placeholder": "Chart placeholder",
+      "callout": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/38e46de8-cd15-49df-b633-65f8c6772c2e",
+        "text": "Drop of 8 points since baseline (~9.6%)."
+      }
+    },
+    {
+      "title": "Time to Complete",
+      "current": {
+        "label": "Current",
+        "date": "Feb 10",
+        "value": "9.4 sec",
+        "trendIconUrl": "https://www.figma.com/api/mcp/asset/07cc3f06-b0cd-4eef-bb89-7a168d081045"
+      },
+      "lastVisits": {
+        "title": "Last 3 visits",
+        "cohort": { "label": "Cohort", "value": "10" },
+        "baseline": { "label": "Baseline", "value": "9" },
+        "visits": [
+          { "label": "Feb 10", "value": "10.2" },
+          { "label": "Apr 5", "value": "9.2" },
+          { "label": "May 2", "value": "9.4" }
+        ]
+      },
+      "yAxisLabels": ["20", "10", "0"],
+      "xAxisLabels": ["Feb", "Apr", "May"],
+      "placeholder": "Chart placeholder",
+      "callout": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/38e46de8-cd15-49df-b633-65f8c6772c2e",
+        "text": "Slower transitions over time; early sign of lower limb fatigue."
+      }
+    },
+    {
+      "title": "Balance Score",
+      "current": {
+        "label": "Current",
+        "date": "Feb 10",
+        "value": "88",
+        "trendIconUrl": "https://www.figma.com/api/mcp/asset/07cc3f06-b0cd-4eef-bb89-7a168d081045"
+      },
+      "lastVisits": {
+        "title": "Last 3 visits",
+        "cohort": { "label": "Cohort", "value": "85" },
+        "baseline": { "label": "Baseline", "value": "84" },
+        "visits": [
+          { "label": "Feb 10", "value": "86" },
+          { "label": "Apr 5", "value": "87" },
+          { "label": "May 2", "value": "89" }
+        ]
+      },
+      "yAxisLabels": ["20", "10", "0"],
+      "xAxisLabels": ["Feb", "Apr", "May"],
+      "placeholder": "Chart placeholder",
+      "callout": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/38e46de8-cd15-49df-b633-65f8c6772c2e",
+        "text": "Gradual decline in symmetry and control; recommend reassessment of PT plan."
+      }
+    },
+    {
+      "title": "Posture Sway",
+      "current": {
+        "label": "Current",
+        "date": "Feb 10",
+        "value": "12%",
+        "trendIconUrl": "https://www.figma.com/api/mcp/asset/07cc3f06-b0cd-4eef-bb89-7a168d081045"
+      },
+      "lastVisits": {
+        "title": "Last 3 visits",
+        "cohort": { "label": "Cohort", "value": "9%" },
+        "baseline": { "label": "Baseline", "value": "8%" },
+        "visits": [
+          { "label": "Feb 10", "value": "10%" },
+          { "label": "Apr 5", "value": "11%" },
+          { "label": "May 2", "value": "12%" }
+        ]
+      },
+      "yAxisLabels": ["20", "10", "0"],
+      "xAxisLabels": ["Feb", "Apr", "May"],
+      "placeholder": "Chart placeholder",
+      "callout": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/38e46de8-cd15-49df-b633-65f8c6772c2e",
+        "text": "Posture compensation increasing—may indicate early spinal instability or fatigue."
+      }
+    }
+  ],
+  "emptyState": {
+    "title": "No video analytics data",
+    "description": "Connect video assessments to populate this view."
+  }
+}

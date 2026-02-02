@@ -33,9 +33,7 @@ export default function Sidebar() {
   return (
     <aside className="flex h-screen w-72 flex-col border-r border-white/10 bg-panel/80 px-5 py-6">
       <div className="space-y-2">
-        <div className="text-xs uppercase tracking-[0.35em] text-ink-muted">
-          Flows
-        </div>
+        <div className="ds-label">Flows</div>
         <nav className="space-y-1">
           {flows.map((flow) => {
             if (flow.enabled && flow.href) {
@@ -46,9 +44,7 @@ export default function Sidebar() {
                   className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-ink shadow-glow transition hover:border-white/30"
                 >
                   <span>{flow.label}</span>
-                  <span className="rounded-full bg-accent/20 px-2 py-0.5 text-[10px] uppercase tracking-widest text-ink">
-                    Live
-                  </span>
+                  <span className="ds-chip">Live</span>
                 </Link>
               );
             }
@@ -59,17 +55,17 @@ export default function Sidebar() {
                 className="flex cursor-not-allowed items-center justify-between rounded-xl border border-white/5 bg-panel-soft/60 px-4 py-3 text-sm text-ink-muted"
               >
                 <span>{flow.label}</span>
-                <span className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] uppercase tracking-widest text-ink-muted">
-                  Soon
-                </span>
+                <span className="ds-chip">Soon</span>
               </div>
             );
           })}
         </nav>
       </div>
-      <div className="mt-auto rounded-2xl border border-white/10 bg-panel/90 p-4 text-xs text-ink-muted">
-        <p className="uppercase tracking-[0.3em]">Phase 1</p>
-        <p className="mt-2">Patient Overview enabled. Additional flows queued.</p>
+      <div className="ds-card mt-auto p-4 text-xs text-ink-muted">
+        <p className="ds-label">Phase 1</p>
+        <p className="mt-2 ds-body">
+          Patient Overview enabled. Additional flows queued.
+        </p>
       </div>
     </aside>
   );

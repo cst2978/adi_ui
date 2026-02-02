@@ -18,6 +18,7 @@ const moduleIds = new Set(SUBSCRIPTION_MODULES.map((module) => module.id));
 export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
   const router = useRouter();
   const [fullName, setFullName] = useState("");
+  const [doctorRole, setDoctorRole] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedModules, setSelectedModules] = useState<
@@ -66,6 +67,11 @@ export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
       return;
     }
 
+    if (!fullName.trim()) {
+      setErrorMessage("Doctor name is required.");
+      return;
+    }
+
     const sanitized = selectedModuleIds.filter((moduleId) =>
       moduleIds.has(moduleId)
     );
@@ -77,6 +83,7 @@ export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fullName,
+          role: doctorRole,
           email,
           password,
           modules: sanitized
@@ -94,6 +101,7 @@ export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
 
       setSuccessMessage("Account created.");
       setFullName("");
+      setDoctorRole("");
       setEmail("");
       setPassword("");
       router.push("/auth/register/success");
@@ -160,7 +168,7 @@ export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
             </p>
             <div className="mt-4 space-y-3">
               <label className="block text-xs uppercase tracking-[0.3em] text-ink-muted">
-                Full name (optional)
+                Doctor name
               </label>
               <input
                 className="w-full rounded-xl border border-white/10 bg-panel-soft px-4 py-3 text-sm text-ink outline-none transition focus:border-accent/70"
@@ -168,6 +176,16 @@ export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
                 placeholder="Dr. Taylor James"
                 value={fullName}
                 onChange={(event) => setFullName(event.target.value)}
+              />
+              <label className="block text-xs uppercase tracking-[0.3em] text-ink-muted">
+                Specialty / Role (optional)
+              </label>
+              <input
+                className="w-full rounded-xl border border-white/10 bg-panel-soft px-4 py-3 text-sm text-ink outline-none transition focus:border-accent/70"
+                type="text"
+                placeholder="Pediatric Pulmonologist"
+                value={doctorRole}
+                onChange={(event) => setDoctorRole(event.target.value)}
               />
               <label className="block text-xs uppercase tracking-[0.3em] text-ink-muted">
                 Email
@@ -198,6 +216,7 @@ export default function RegisterPanel({ supabaseEnabled }: RegisterPanelProps) {
                   submitting ||
                   !email ||
                   !password ||
+                  !fullName.trim() ||
                   selectedCount === 0
                 }
               >

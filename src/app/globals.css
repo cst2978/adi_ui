@@ -1,19 +1,8 @@
+@import "../styles/design-tokens.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --color-canvas: 8 12 18;
-  --color-panel: 15 22 32;
-  --color-panel-soft: 21 30 42;
-  --color-ink: 235 242 255;
-  --color-ink-muted: 164 180 205;
-  --color-accent: 90 130 255;
-  --color-accent-soft: 24 45 84;
-  --color-alert: 237 101 113;
-  --color-warning: 241 179 90;
-  --color-success: 96 201 164;
-}
 
 * {
   box-sizing: border-box;

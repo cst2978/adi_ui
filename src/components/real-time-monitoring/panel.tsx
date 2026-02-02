@@ -33,7 +33,7 @@ export default function RealTimeMonitoringPanel({
 
   if (!data) {
     return (
-      <div className="rounded-2xl border border-white/10 bg-panel/80 p-6 text-sm text-ink-muted">
+      <div className="ds-card p-6 text-sm text-ink-muted">
         Real-time monitoring data is not available yet.
       </div>
     );
@@ -45,9 +45,9 @@ export default function RealTimeMonitoringPanel({
         {availableTabs.map((tab) => (
           <button
             key={tab.tab_id}
-            className={`rounded-full px-4 py-2 text-xs uppercase tracking-[0.3em] transition ${
+            className={`ds-chip transition ${
               activeTab === tab.tab_id
-                ? "bg-accent/30 text-ink"
+                ? "border-accent/50 bg-accent/20 text-ink"
                 : "border border-white/10 bg-white/5 text-ink-muted"
             }`}
             onClick={() => setActiveTab(tab.tab_id)}
@@ -77,7 +77,7 @@ export default function RealTimeMonitoringPanel({
                 {dateRanges.map((range) => (
                   <button
                     key={range}
-                    className={`rounded-full border px-3 py-1 text-[11px] uppercase tracking-[0.25em] transition ${
+                    className={`ds-chip border transition ${
                       activeRange === range
                         ? "border-accent/50 bg-accent/20 text-ink"
                         : "border-white/10 bg-white/5 text-ink-muted"

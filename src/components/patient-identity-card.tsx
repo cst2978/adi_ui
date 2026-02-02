@@ -14,7 +14,7 @@ export default function PatientIdentityCard({
   const risk = header.risk_level ?? "N/A";
 
   return (
-    <section className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-panel/90 p-6 shadow-card">
+    <section className="ds-card flex h-full flex-col justify-between p-6">
       <div className="flex items-start gap-4">
         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-accent/20 text-lg font-semibold text-ink">
           {name
@@ -25,12 +25,10 @@ export default function PatientIdentityCard({
         </div>
         <div className="space-y-2">
           <div className="flex flex-wrap items-center gap-2">
-            <h2 className="text-xl font-semibold text-ink">{name}</h2>
-            <span className="rounded-full border border-white/10 bg-panel-soft px-3 py-1 text-xs text-ink">
-              {gender}
-            </span>
+            <h2 className="ds-section-title">{name}</h2>
+            <span className="ds-chip">{gender}</span>
           </div>
-          <div className="text-sm text-ink-muted">
+          <div className="ds-body">
             DOB {formatDate(dob)} - {formatAge(dob)}
           </div>
         </div>
@@ -38,16 +36,12 @@ export default function PatientIdentityCard({
 
       <div className="mt-6 space-y-3">
         <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-ink-muted">
-            Diagnosis
-          </p>
-          <p className="text-sm text-ink">{diagnosis}</p>
+          <p className="ds-label">Diagnosis</p>
+          <p className="ds-value">{diagnosis}</p>
         </div>
         <div className="flex items-center gap-3">
-          <span className="rounded-full bg-alert/20 px-3 py-1 text-xs font-semibold text-alert">
-            {risk}
-          </span>
-          <span className="text-xs text-ink-muted">Clinical risk tier</span>
+          <span className="ds-badge ds-badge-critical">{risk}</span>
+          <span className="ds-caption">Clinical risk tier</span>
         </div>
       </div>
     </section>

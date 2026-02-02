@@ -1,0 +1,65 @@
+{
+  "patientId": "PAT-123",
+  "page": {
+    "title": "Functional",
+    "subtitle": "Mobility and strength progression"
+  },
+  "scorecards": [
+    {
+      "label": "NSAA",
+      "value": "28",
+      "change": "+4 vs baseline",
+      "context": "Last test Jan 12"
+    },
+    {
+      "label": "6MWT",
+      "value": "412 m",
+      "change": "+38 m vs baseline",
+      "context": "Last test Dec 20"
+    },
+    {
+      "label": "TUG",
+      "value": "9.2 s",
+      "change": "Stable",
+      "context": "Last test Dec 20"
+    }
+  ],
+  "charts": [
+    {
+      "title": "NSAA trajectory",
+      "description": "12 month history",
+      "height": 220,
+      "placeholder": "Chart placeholder"
+    },
+    {
+      "title": "6MWT trend",
+      "description": "Last 8 assessments",
+      "height": 200,
+      "placeholder": "Chart placeholder"
+    }
+  ],
+  "assessments": {
+    "title": "Assessments",
+    "items": [
+      {
+        "label": "Timed up and go",
+        "value": "9.2 s",
+        "note": "Stable since last visit"
+      },
+      {
+        "label": "North Star items",
+        "value": "15 items stable",
+        "note": "No regressions flagged"
+      },
+      {
+        "label": "Grip strength",
+        "value": "21 kg",
+        "note": "Slight improvement"
+      }
+    ]
+  },
+  "emptyState": {
+    "title": "No functional data",
+    "description": "Add assessments to track functional progression."
+  }
+}

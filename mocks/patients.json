@@ -1,0 +1,52 @@
+{
+  "page": {
+    "title": "Choose Patient",
+    "subtitle": "Select a patient to open their overview.",
+    "searchPlaceholder": "Search patients, diagnoses, mutations...",
+    "continueLabel": "Continue where you left off",
+    "continueDescription": "Last opened patient",
+    "emptyTitle": "No patients found",
+    "emptyDescription": "Try a different search or connect a data source."
+  },
+  "patients": [
+    {
+      "id": "PAT-123",
+      "name": "Ethan Doe",
+      "subtitle": "Duchenne muscular dystrophy",
+      "risk": { "label": "High Risk", "tone": "critical" },
+      "tags": ["Ambulatory", "Trial Enrolled"],
+      "fields": [
+        { "label": "Date of Birth", "value": "08 Jul 2016" },
+        { "label": "Gender", "value": "Male" },
+        { "label": "Mutation", "value": "Exon 51 deletion" },
+        { "label": "Last Visit", "value": "Jan 12, 2024" }
+      ]
+    },
+    {
+      "id": "PAT-456",
+      "name": "Ava Smith",
+      "subtitle": "Spinal muscular atrophy",
+      "risk": { "label": "Watch", "tone": "warning" },
+      "tags": ["Non-ambulatory", "Respiratory"],
+      "fields": [
+        { "label": "Date of Birth", "value": "22 Oct 2018" },
+        { "label": "Gender", "value": "Female" },
+        { "label": "Mutation", "value": "SMN1 deletion" },
+        { "label": "Last Visit", "value": "Dec 02, 2023" }
+      ]
+    },
+    {
+      "id": "PAT-789",
+      "name": "Liam Patel",
+      "subtitle": "Becker muscular dystrophy",
+      "risk": { "label": "Moderate", "tone": "info" },
+      "tags": ["Ambulatory", "Cardiac"],
+      "fields": [
+        { "label": "Date of Birth", "value": "14 Mar 2010" },
+        { "label": "Gender", "value": "Male" },
+        { "label": "Mutation", "value": "Exon 45 duplication" },
+        { "label": "Last Visit", "value": "Nov 18, 2023" }
+      ]
+    }
+  ]
+}

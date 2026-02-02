@@ -1,0 +1,245 @@
+{
+  "patientId": "PAT-123",
+  "layout": {
+    "navRail": {
+      "logoUrl": "https://www.figma.com/api/mcp/asset/b30b9da1-b75a-4a2d-9d1e-fcdd1838d22a",
+      "primaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/83fb812e-8e7c-46a4-ab4e-f348004339ba" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/9d287a8d-8308-4ce9-b2a5-f85bdcba61c7" },
+        {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/b6afb492-b6eb-4fd0-b1e8-f2ff73c6e83b",
+          "active": true
+        },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/85f23819-1be8-48d2-a511-1ecedb0add63" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/82d8b00a-d332-4bfa-b78c-b8d5007faa17" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/e7a66cfd-06b7-4f0a-86cb-c286185b3576" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/9d287a8d-8308-4ce9-b2a5-f85bdcba61c7" }
+      ],
+      "middleImageUrl": "https://www.figma.com/api/mcp/asset/d103f3b3-712e-413a-8e14-aba0e061dffa",
+      "secondaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/2de126df-4fe6-48c8-89ef-843f4ff080ad" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/e7a66cfd-06b7-4f0a-86cb-c286185b3576" }
+      ]
+    },
+    "topBar": {
+      "navItems": [
+        {
+          "label": "Patients",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/bbdb8fe6-d69d-4145-aaf3-e28579e69a13",
+          "active": true,
+          "activeGradient": "linear-gradient(255deg, #2bdbd3 6%, #73d5ff 96%)"
+        },
+        {
+          "label": "Cohort Analytics",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/896f6750-2140-4741-9936-bc2f400343bf",
+          "active": false
+        },
+        {
+          "label": "Gen AI Playground",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/61a51bd9-2b82-44f4-83d2-e990f858ce69",
+          "active": false
+        }
+      ],
+      "user": {
+        "name": "Dr. Jane Doe",
+        "role": "Pediatric Pulmonologist",
+        "avatarUrl": "https://www.figma.com/api/mcp/asset/e7d251cc-4c6c-4f8c-a30b-8c6de2b34431",
+        "menuIconUrl": "https://www.figma.com/api/mcp/asset/89127ae2-10c0-4ab4-9309-8a2a674cb56f"
+      },
+      "notificationIconUrl": "https://www.figma.com/api/mcp/asset/773f2253-9a2c-4726-8d04-ee168146587e",
+      "settingsIconUrl": "https://www.figma.com/api/mcp/asset/9ade6d5d-2604-4e92-8cdb-3a4502038f19"
+    },
+    "actionRail": {
+      "toggleIconUrl": "https://www.figma.com/api/mcp/asset/c7c95dee-5d72-4110-aa07-05612054176d",
+      "items": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/98d59e71-6006-4dcf-98d8-2a5d63181240" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/c6e5c6bb-1509-43c3-88b0-1eaf5321a48e" }
+      ]
+    }
+  },
+  "header": {
+    "title": "Progression",
+    "breadcrumb": {
+      "items": ["Progression", "Timeline"],
+      "separatorIconUrl": "https://www.figma.com/api/mcp/asset/94306522-97f1-47a8-b639-3bcfa67801d4"
+    },
+    "search": {
+      "placeholder": "Search patients, biomarkers, therapies, alerts, videos ...",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/4c1bae60-0e79-4423-b552-ceca83729f94"
+    },
+    "filter": {
+      "label": "Filters",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/db010dcf-edda-4a80-9121-d3a1082bc19f"
+    }
+  },
+  "tabs": [
+    { "label": "Overview", "href": "/patient/PAT-123/progression/overview" },
+    { "label": "Functional", "href": "/patient/PAT-123/progression/functional" },
+    { "label": "Biomarkers", "href": "/patient/PAT-123/progression/biomarkers" },
+    { "label": "Organ Systems", "href": "/patient/PAT-123/progression/organ-systems" },
+    { "label": "Video Analytics", "href": "/patient/PAT-123/progression/video-analytics" },
+    { "label": "Timeline", "href": "/patient/PAT-123/progression/timeline" }
+  ],
+  "patientSummary": {
+    "backgroundUrl": "https://www.figma.com/api/mcp/asset/975e4730-b8c2-4583-aee9-b407871f55a3",
+    "avatarUrl": "https://www.figma.com/api/mcp/asset/23088878-92d2-4dfc-94f0-af8f6357fb27",
+    "name": "Ethan Doe",
+    "genderBadge": "M",
+    "birthInfo": "8-Jul-2021- 3y 9m",
+    "diagnosis": "Duchenne Muscular Disease",
+    "risk": {
+      "label": "High Risk",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/45d3f724-4a4f-4a73-8f49-e7f0d75365fd",
+      "tone": "critical"
+    },
+    "cta": {
+      "label": "Full Details",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/c8ead4d0-c96e-4c4c-ba22-a4563ec51fbf"
+    }
+  },
+  "aiSummary": {
+    "title": "AI Summary",
+    "text": "Patient shows mild decline in mobility and lung function over 6 months. Gene therapy response is positive, but steroid-related side effects (elevated CK, ALT) are emerging. Monitoring and dosage adjustment recommended."
+  },
+  "compositeScore": {
+    "title": "Composite Functional Score",
+    "value": "76",
+    "delta": "-6",
+    "deltaIconUrl": "https://www.figma.com/api/mcp/asset/e6c8ed97-f6f4-4868-a934-af69dfd647cf",
+    "trend": "Declined from 84 to 76 over 6 months (-6 pts)",
+    "links": [
+      {
+        "label": "Score breakdown",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/c8ead4d0-c96e-4c4c-ba22-a4563ec51fbf"
+      },
+      {
+        "label": "Functional Domains",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/c8ead4d0-c96e-4c4c-ba22-a4563ec51fbf"
+      },
+      {
+        "label": "Sources",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/c8ead4d0-c96e-4c4c-ba22-a4563ec51fbf"
+      }
+    ]
+  },
+  "overview": {
+    "title": "Overall Disease Progression",
+    "description": "Ethan Doe shows moderate but accelerating disease progression over the last 2 years, with declining functional and pulmonary scores despite stabilized biomarkers.",
+    "score": {
+      "label": "Normalized Score",
+      "value": "64",
+      "timestamp": "27 JUN 21:35 PM",
+      "trendIconUrl": "https://www.figma.com/api/mcp/asset/768ccd0f-ade9-4408-a3a9-98afb218abbb"
+    },
+    "legend": [
+      { "label": "Cohort", "tone": "neutral" },
+      { "label": "Baseline", "tone": "info" },
+      { "label": "Predicted", "tone": "warning" },
+      { "label": "Alerts", "tone": "critical" },
+      { "label": "Medicines", "tone": "success" },
+      { "label": "Biomarkers", "tone": "info" }
+    ],
+    "xAxisLabels": ["Jan20", "Feb20", "Mar20", "Apr20", "May20", "Jun20", "Jul20", "Aug20", "Sep20", "Oct20"],
+    "yAxisLabels": ["75M", "50M", "25M", "0"],
+    "placeholder": "Chart placeholder",
+    "callout": {
+      "iconUrl": "https://www.figma.com/api/mcp/asset/52c28664-e00b-40cc-8ede-cc950e4980c8",
+      "text": "Functional capacity has dropped by 8 NSAA points; FVC fell from 72% to 58%, indicating increased risk of mobility and respiratory decline within the next 6–12 months."
+    }
+  },
+  "progressCards": [
+    {
+      "title": "Functional Progression",
+      "alert": { "label": "Alerts", "tone": "critical" },
+      "score": {
+        "label": "Normalized",
+        "value": "83",
+        "timestamp": "27 JAN - 27 JUN",
+        "trendIconUrl": "https://www.figma.com/api/mcp/asset/768ccd0f-ade9-4408-a3a9-98afb218abbb"
+      },
+      "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      "yAxisLabels": ["75M", "50M", "25M", "0"],
+      "placeholder": "Chart placeholder",
+      "callout": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/52c28664-e00b-40cc-8ede-cc950e4980c8",
+        "text": "Gradual decline since Feb; below cohort median by 18%"
+      }
+    },
+    {
+      "title": "Pulmonary Progression",
+      "alert": { "label": "Alerts", "tone": "critical" },
+      "score": {
+        "label": "Normalized",
+        "value": "68",
+        "timestamp": "27 JAN - 27 JUN",
+        "trendIconUrl": "https://www.figma.com/api/mcp/asset/768ccd0f-ade9-4408-a3a9-98afb218abbb"
+      },
+      "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      "yAxisLabels": ["75M", "50M", "25M", "0"],
+      "placeholder": "Chart placeholder",
+      "callout": {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/52c28664-e00b-40cc-8ede-cc950e4980c8",
+        "text": "Gradual decline since Feb; below cohort median by 18%"
+      }
+    }
+  ],
+  "filters": {
+    "title": "Filters",
+    "closeIconUrl": "https://www.figma.com/api/mcp/asset/ad797c01-a127-4102-a2f6-9bda830c25de",
+    "sections": [
+      {
+        "label": "Time Range",
+        "value": "Last 6 months",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/4ac652ee-1796-4a19-9459-5b5003918833"
+      },
+      {
+        "label": "Data type",
+        "value": "Selected",
+        "selectedCount": "2",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/4ac652ee-1796-4a19-9459-5b5003918833",
+        "tags": [
+          {
+            "label": "Functional",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          },
+          {
+            "label": "Pulmonary",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          }
+        ]
+      },
+      {
+        "label": "Chart Overlays",
+        "value": "Selected",
+        "selectedCount": "5",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/4ac652ee-1796-4a19-9459-5b5003918833",
+        "tags": [
+          {
+            "label": "Complications",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          },
+          {
+            "label": "Alerts",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          },
+          {
+            "label": "Cohort",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          },
+          {
+            "label": "Baseline",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          },
+          {
+            "label": "Medication",
+            "iconUrl": "https://www.figma.com/api/mcp/asset/47b3d311-337b-4128-afad-9dc6d9b2d642"
+          }
+        ]
+      }
+    ]
+  },
+  "emptyState": {
+    "title": "No timeline data",
+    "description": "Connect timeline events to populate this view."
+  }
+}

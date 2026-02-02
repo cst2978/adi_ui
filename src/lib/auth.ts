@@ -53,6 +53,7 @@ if (process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY) {
             data.user.user_metadata?.name ??
             data.user.email ??
             "Clinician",
+          role: data.user.user_metadata?.role ?? data.user.user_metadata?.specialty,
           email: data.user.email
         };
       }
@@ -72,12 +73,16 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
+        token.role = (user as { role?: string }).role;
       }
       return token;
     },
     async session({ session, token }) {
       if (session.user && token.id) {
         session.user.id = token.id as string;
+      }
+      if (session.user && token.role) {
+        session.user.role = token.role as string;
       }
       return session;
     }

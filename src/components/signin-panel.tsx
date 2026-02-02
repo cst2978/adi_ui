@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 type SignInPanelProps = {
   googleEnabled: boolean;
@@ -16,6 +17,31 @@ export default function SignInPanel({
 }: SignInPanelProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
+
+  const handleCredentialsSignIn = async () => {
+    if (!credentialsEnabled || !email || !password || isSubmitting) {
+      return;
+    }
+    setError(null);
+    setIsSubmitting(true);
+    const result = await signIn("credentials", {
+      email,
+      password,
+      redirect: false,
+      callbackUrl: "/patients"
+    });
+    setIsSubmitting(false);
+
+    if (result?.ok) {
+      router.replace(result.url ?? "/patients");
+      return;
+    }
+
+    setError(result?.error ?? "Unable to sign in with those credentials.");
+  };
 
   return (
     <div className="w-full max-w-4xl rounded-3xl border border-white/10 bg-panel/80 p-10 shadow-card backdrop-blur">
@@ -66,7 +92,11 @@ export default function SignInPanel({
             <div className="mt-5 space-y-3">
               <button
                 className="w-full rounded-xl border border-transparent bg-ink px-4 py-3 text-sm font-medium text-canvas transition hover:bg-white"
-                onClick={() => signIn("google")}
+                onClick={() =>
+                  signIn("google", {
+                    callbackUrl: "/patients"
+                  })
+                }
                 disabled={!googleEnabled}
               >
                 Continue with Google
@@ -107,17 +137,16 @@ export default function SignInPanel({
               />
               <button
                 className="w-full rounded-xl border border-accent/40 bg-accent/20 px-4 py-3 text-sm font-medium text-ink transition hover:border-accent/70"
-                onClick={() =>
-                  signIn("credentials", {
-                    email,
-                    password,
-                    callbackUrl: "/patients/overview"
-                  })
+                onClick={handleCredentialsSignIn}
+                disabled={
+                  !credentialsEnabled || !email || !password || isSubmitting
                 }
-                disabled={!credentialsEnabled || !email || !password}
               >
-                Sign in
+                {isSubmitting ? "Signing in..." : "Sign in"}
               </button>
+              {error ? (
+                <p className="text-xs text-warning">{error}</p>
+              ) : null}
               {!credentialsEnabled ? (
                 <p className="text-xs text-warning">
                   Set SUPABASE_URL and SUPABASE_ANON_KEY to enable Supabase

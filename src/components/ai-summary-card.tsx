@@ -6,14 +6,12 @@ export default function AiSummaryCard({
   summary: AiSummary | null;
 }) {
   return (
-    <section className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-panel/90 p-6 shadow-card">
+    <section className="ds-card flex h-full flex-col justify-between p-6">
       <div>
         <div className="flex items-center justify-between">
-          <h3 className="text-sm uppercase tracking-[0.3em] text-ink-muted">
-            AI Summary
-          </h3>
+          <p className="ds-label">AI Summary</p>
           {summary?.confidence != null ? (
-            <span className="rounded-full bg-accent/20 px-3 py-1 text-xs text-ink">
+            <span className="ds-chip">
               {(summary.confidence * 100).toFixed(0)}% confidence
             </span>
           ) : null}

@@ -1,0 +1,296 @@
+{
+  "patientId": "PAT-123",
+  "layout": {
+    "navRail": {
+      "logoUrl": "https://www.figma.com/api/mcp/asset/1dc0b46f-f342-4c38-878d-654dcf199e80",
+      "primaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d2119340-e6b4-446d-b6fa-c2996409c2c6" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/8ae28e14-6aa6-490d-9aaa-faab3bc3d99e" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/2f14442b-8c7f-432f-8d37-a27918091be7" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/c5d30be2-4b34-4b68-b45d-f72eaa42a7ad" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/960b53c8-ab54-45a5-afca-46d5540a2905" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/0d04435c-e36b-4557-8149-5c73ae52eb63" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/8ae28e14-6aa6-490d-9aaa-faab3bc3d99e" }
+      ],
+      "middleImageUrl": "https://www.figma.com/api/mcp/asset/e2de33e8-71b9-4974-9acb-0d913cf2c8da",
+      "secondaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/7524eb15-97d3-4e7b-8fb3-b147e31f0a35" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/0d04435c-e36b-4557-8149-5c73ae52eb63" }
+      ]
+    },
+    "topBar": {
+      "navItems": [
+        {
+          "label": "Patients",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/ec9ee613-547e-4a0e-99a4-7b1de5540162",
+          "active": true,
+          "activeGradient": "linear-gradient(255deg, #2bdbd3 6%, #73d5ff 96%)"
+        },
+        {
+          "label": "Cohort Analytics",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/48fb2a45-acc9-4b4b-a18d-3445d499086d",
+          "active": false
+        },
+        {
+          "label": "Gen AI Playground",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/175ad429-dea4-4390-baea-6091c98eaead",
+          "active": false
+        }
+      ],
+      "user": {
+        "name": "Dr. Jane Doe",
+        "role": "Pediatric Pulmonologist",
+        "avatarUrl": "https://www.figma.com/api/mcp/asset/a9f81e22-74f6-4178-b8b3-096052ae00e4",
+        "menuIconUrl": "https://www.figma.com/api/mcp/asset/71caf127-dc4a-4b35-aa5c-64820522c486"
+      },
+      "notificationIconUrl": "https://www.figma.com/api/mcp/asset/eaff13ce-9e97-46ec-bb3d-059d04865c5c",
+      "settingsIconUrl": "https://www.figma.com/api/mcp/asset/f39c59c9-1ff6-4b7e-8927-587db7acf1bb"
+    },
+    "actionRail": {
+      "toggleIconUrl": "https://www.figma.com/api/mcp/asset/3ecd54a9-ae1b-4938-8ed5-bcaa16905e64",
+      "items": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/04d53a01-e1db-4513-8d77-2c14a6d2b367" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/95a57808-075b-4dd5-8deb-f092b7c89b8e" }
+      ]
+    }
+  },
+  "header": {
+    "title": "Patient Overview",
+    "search": {
+      "placeholder": "Search patients, biomarkers, therapies, alerts, videos ...",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/6b93758e-6eca-4edf-bba9-a1383fc36bc9"
+    },
+    "filter": {
+      "label": "Filters",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/023a8c65-477d-41d9-81b3-f0db7fd7da5d"
+    }
+  },
+  "patientCard": {
+    "backgroundUrl": "https://www.figma.com/api/mcp/asset/f4376213-0df4-44c6-b9a2-9a65a4317ff8",
+    "avatarUrl": "https://www.figma.com/api/mcp/asset/8f84a392-1724-4bc3-9ac2-d8959443685e",
+    "name": "Ethan Doe",
+    "genderBadge": "M",
+    "birthInfo": "8-Jul-2021     7y 9m",
+    "diagnosis": "Duchenne Muscular Disease",
+    "risk": {
+      "label": "High Risk",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/c3fc95c6-73b8-42ba-86e5-e012717c9084",
+      "tone": "critical"
+    },
+    "infoGroups": [
+      {
+        "items": [
+          {
+            "iconUrl": "https://www.figma.com/api/mcp/asset/9c665e65-825b-4f8a-8c38-e20539b150e8",
+            "label": "Diagnosis Date",
+            "value": "Jan 15, 2022"
+          },
+          {
+            "iconUrl": "https://www.figma.com/api/mcp/asset/a3fbfb14-7df3-4381-8ec5-ae543b9275ac",
+            "label": "Mutation Type",
+            "value": "Exon 51 Deletion"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "iconUrl": "https://www.figma.com/api/mcp/asset/c56783ff-c7bd-4a3d-a705-f049c0dbedf8",
+            "label": "Ambulation Status",
+            "value": "Ambulatory"
+          },
+          {
+            "iconUrl": "https://www.figma.com/api/mcp/asset/b6b8053f-79f7-4bad-a326-da547e2114a7",
+            "label": "Current Therapy",
+            "value": "Steroid (Deflazacort), Gene Therapy Trial A"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "iconUrl": "https://www.figma.com/api/mcp/asset/d5db6cda-dab3-485a-ac0b-0bae4fdc8061",
+            "label": "Care Team",
+            "value": "Dr. Patel (Neurologist), PT team"
+          },
+          {
+            "iconUrl": "https://www.figma.com/api/mcp/asset/0e69c743-770e-48a5-aab6-736f532c3aa1",
+            "label": "Test Type",
+            "value": "Whole Exome Sequencing (WES)"
+          }
+        ]
+      }
+    ]
+  },
+  "changeSummary": {
+    "title": "What Changed Since Last Visit",
+    "summary": {
+      "label": "AI Summary",
+      "text": "Patient shows mild decline in mobility and lung function over 6 months. Gene therapy response is positive, but steroid-related side effects (elevated CK, ALT) are emerging. Monitoring and dosage adjustment recommended."
+    },
+    "alertSection": {
+      "iconUrl": "https://www.figma.com/api/mcp/asset/0e69c743-770e-48a5-aab6-736f532c3aa1",
+      "title": "Functional Decline Detected",
+      "cta": {
+        "label": "View all",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/3c79e677-fb17-4eee-b17c-e5773a90e948"
+      }
+    },
+    "metrics": [
+      {
+        "label": "NSAA",
+        "value": "12/34",
+        "deltaIconUrl": "https://www.figma.com/api/mcp/asset/fdd22fc8-31aa-40b0-9b7e-60fdddae91f4",
+        "baselineLabel": "Baseline",
+        "baselineValue": "15/34",
+        "cohortLabel": "Cohort",
+        "cohortValue": "17/34"
+      },
+      {
+        "label": "6MWT",
+        "value": "215m",
+        "deltaIconUrl": "https://www.figma.com/api/mcp/asset/fdd22fc8-31aa-40b0-9b7e-60fdddae91f4",
+        "baselineLabel": "Baseline",
+        "baselineValue": "250m",
+        "cohortLabel": "Cohort",
+        "cohortValue": "290m"
+      },
+      {
+        "label": "Timed Up & Go",
+        "value": "12.4s",
+        "deltaIconUrl": "https://www.figma.com/api/mcp/asset/691fc254-a50e-4c79-b8e8-532f70d48408",
+        "baselineLabel": "Baseline",
+        "baselineValue": "9.8s",
+        "cohortLabel": "Cohort",
+        "cohortValue": "8.5s"
+      },
+      {
+        "label": "Sit to Stand",
+        "value": "7.2s",
+        "deltaIconUrl": "https://www.figma.com/api/mcp/asset/691fc254-a50e-4c79-b8e8-532f70d48408",
+        "baselineLabel": "Baseline",
+        "baselineValue": "6.1s",
+        "cohortLabel": "Cohort",
+        "cohortValue": "5.4s"
+      }
+    ],
+    "footer": {
+      "leftLabel": "Confidence: HIGH",
+      "rightLabel": "Why am I seeing this?"
+    }
+  },
+  "compositeScore": {
+    "title": "Composite Functional Score",
+    "value": "76",
+    "delta": "-6",
+    "deltaIconUrl": "https://www.figma.com/api/mcp/asset/578e26c1-18f8-4da9-84e0-a3c38ccb0369",
+    "trend": "Declined from 84 to 76 over 6 months (-6 pts)",
+    "links": [
+      {
+        "label": "Score breakdown",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/e528aa1a-5900-49fa-a001-2acbd7f30ab8"
+      },
+      {
+        "label": "Sources",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/82d915dc-2746-47dd-b9eb-29634905d9e3"
+      }
+    ]
+  },
+  "safetySignals": {
+    "title": "Safety Signals & Monitoring",
+    "items": [
+      {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/511c8676-c23e-44f3-aad9-190a32672fb4",
+        "label": "Fatigue activity drop detected"
+      },
+      {
+        "iconUrl": "https://www.figma.com/api/mcp/asset/511c8676-c23e-44f3-aad9-190a32672fb4",
+        "label": "Steroid-related lab elevations (CK, ALT)"
+      }
+    ],
+    "cta": {
+      "iconUrl": "https://www.figma.com/api/mcp/asset/d5db6cda-dab3-485a-ac0b-0bae4fdc8061",
+      "label": "Escalate to Care Team"
+    },
+    "link": {
+      "iconUrl": "https://www.figma.com/api/mcp/asset/bf16c49b-8107-44d3-9bc9-e2f07c7a8e1f",
+      "label": "View Alert Details"
+    }
+  },
+  "multispecialty": {
+    "title": "Multispecialty Snapshot",
+    "controls": [
+      { "iconUrl": "https://www.figma.com/api/mcp/asset/bf16c49b-8107-44d3-9bc9-e2f07c7a8e1f" }
+    ],
+    "cards": [
+      {
+        "label": "Neurology",
+        "status": { "label": "Critical", "tone": "critical" },
+        "summary": "Functional decline detected across mobility and endurance measures."
+      },
+      {
+        "label": "Pulmonary",
+        "status": { "label": "Stable", "tone": "success" },
+        "summary": "No acute safety events detected."
+      },
+      {
+        "label": "Cardiology",
+        "status": { "label": "Improving", "tone": "info" },
+        "summary": "Therapy response exceeds expected stabilization benchmarks."
+      },
+      {
+        "label": "Therapy",
+        "status": { "label": "Stable", "tone": "success" },
+        "summary": "Steroid taper therapy response ongoing."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Longitudinal Timeline",
+    "cta": {
+      "label": "View all",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/82d915dc-2746-47dd-b9eb-29634905d9e3"
+    },
+    "events": [
+      {
+        "date": "Jan 12",
+        "title": "Previous Visit",
+        "detail": "Functional, respiratory, and safety assessments performed.",
+        "tone": "info",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/0e69c743-770e-48a5-aab6-736f532c3aa1"
+      },
+      {
+        "date": "Feb 10",
+        "title": "Functional Decline",
+        "detail": "Composite functional score decreased compared to prior visit.",
+        "tone": "warning",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/f005d31c-6e2c-4df7-8197-2f5ca490b4d6"
+      },
+      {
+        "date": "Mar 03",
+        "title": "Steroid Dose Changed",
+        "detail": "Decreased activity levels and increased fatigue reported over 6 weeks.",
+        "tone": "info",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/0e69c743-770e-48a5-aab6-736f532c3aa1"
+      },
+      {
+        "date": "Apr 01",
+        "title": "Lab Abnormalities Noted",
+        "detail": "Mild CK and ALT elevations identified during routine monitoring.",
+        "tone": "warning",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/144176dd-db3f-46bb-bc4b-8e738c08a007"
+      },
+      {
+        "date": "May 02",
+        "title": "Upcoming Visit",
+        "detail": "Scheduled follow-up to review progression and therapy response.",
+        "tone": "info",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/8a6df120-5003-4ec4-a528-49263dab017a"
+      }
+    ]
+  },
+  "emptyState": {
+    "title": "No overview data",
+    "description": "Connect patient data sources to populate the overview."
+  }
+}

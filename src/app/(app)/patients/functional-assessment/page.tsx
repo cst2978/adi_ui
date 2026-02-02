@@ -9,6 +9,7 @@ import {
   getFunctionalAssessment,
   type SeriesPoint
 } from "@/lib/functionalAssessmentData";
+import { Body, PageTitle } from "@/components/ui/typography";
 
 const defaultKpiTabs = [
   "Functional Mobility KPIs",
@@ -140,12 +141,8 @@ export default async function FunctionalAssessmentPage({
     <div className="space-y-8">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-semibold text-ink">
-            Functional Assessment
-          </h2>
-          <p className="text-sm text-ink-muted">
-            Functional score summary for {patient.patient_id}
-          </p>
+          <PageTitle>Functional Assessment</PageTitle>
+          <Body>Functional score summary for {patient.patient_id}</Body>
         </div>
         <PatientSelector
           patients={patients}

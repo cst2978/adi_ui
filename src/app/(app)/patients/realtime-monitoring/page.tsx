@@ -10,6 +10,7 @@ import {
   getPatientList,
   getPatientOverview
 } from "@/lib/patientOverviewData";
+import { Body, PageTitle } from "@/components/ui/typography";
 
 export default async function RealTimeMonitoringPage({
   searchParams
@@ -23,9 +24,7 @@ export default async function RealTimeMonitoringPage({
 
   if (!patient) {
     return (
-      <div className="rounded-2xl border border-white/10 bg-panel/80 p-6 text-ink">
-        No patients available.
-      </div>
+      <div className="ds-card p-6 text-ink">No patients available.</div>
     );
   }
 
@@ -39,10 +38,10 @@ export default async function RealTimeMonitoringPage({
     <div className="space-y-10">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-semibold text-ink">Real-time Monitoring</h2>
-          <p className="text-sm text-ink-muted">
+          <PageTitle>Real-time Monitoring</PageTitle>
+          <Body>
             Live signal overview for {patient.patient_id}
-          </p>
+          </Body>
         </div>
         <PatientSelector
           patients={patients}

@@ -7,7 +7,7 @@ export default async function RegisterPage() {
   const session = await getServerSession(authOptions);
 
   if (session) {
-    redirect("/patients/overview");
+    redirect("/patients");
   }
 
   const supabaseEnabled = Boolean(

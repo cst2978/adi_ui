@@ -1,0 +1,269 @@
+{
+  "patientId": "PAT-123",
+  "layout": {
+    "navRail": {
+      "logoUrl": "https://www.figma.com/api/mcp/asset/fea24945-1de7-4f49-851f-e4617619a430",
+      "primaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/f10f6f24-05fd-4324-9292-531bd60b342c" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/6b326884-70ff-48ab-9b35-f8bcfd3b1261" },
+        {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/473392ea-9482-4b5d-9bb1-f2db3bd145d8",
+          "active": true
+        },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/46862276-ae67-4c29-9443-5056e55f16e6" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d7fc24e0-3cd2-4bfb-9f8f-501e2339d39a" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/0327afad-464e-4f86-94f2-08041fc9a4df" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/6b326884-70ff-48ab-9b35-f8bcfd3b1261" }
+      ],
+      "middleImageUrl": "https://www.figma.com/api/mcp/asset/11a92e23-5bcb-4bc2-a4db-a329344a8130",
+      "secondaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/2c19f97b-8a50-4352-ab59-04762de2ba4f" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/0327afad-464e-4f86-94f2-08041fc9a4df" }
+      ]
+    },
+    "topBar": {
+      "navItems": [
+        {
+          "label": "Patients",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/0d86c17d-c936-4c64-a1f7-6a9effd3d720",
+          "active": true,
+          "activeGradient": "linear-gradient(255deg, #2bdbd3 6%, #73d5ff 96%)"
+        },
+        {
+          "label": "Cohort Analytics",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/8dce3774-a14e-4d4c-8536-f682bc91b9a5",
+          "active": false
+        },
+        {
+          "label": "Gen AI Playground",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/f5068294-3493-43d9-bf11-42fa26c865a1",
+          "active": false
+        }
+      ],
+      "user": {
+        "name": "Dr. Jane Doe",
+        "role": "Pediatric Pulmonologist",
+        "avatarUrl": "https://www.figma.com/api/mcp/asset/3d70dfbd-7b8d-401a-8e03-b7ef724634eb",
+        "menuIconUrl": "https://www.figma.com/api/mcp/asset/2c0d6666-85c5-4be5-b416-b21472663f9c"
+      },
+      "notificationIconUrl": "https://www.figma.com/api/mcp/asset/b5e44332-26f6-470b-9007-932b9a1e57ad",
+      "settingsIconUrl": "https://www.figma.com/api/mcp/asset/15c3d25e-2f4f-4a13-9a6d-e952c2a0dc2e"
+    },
+    "actionRail": {
+      "toggleIconUrl": "https://www.figma.com/api/mcp/asset/6af56c21-0e09-4be5-8f2e-753b0e0be308",
+      "items": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/13df5efe-2dfb-4eb5-99b5-23eb648575df" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/6c3584ec-445d-4fbd-8694-4e772a97bc21" }
+      ]
+    }
+  },
+  "header": {
+    "title": "Progression",
+    "breadcrumb": {
+      "items": ["Progression", "Biomarkers"],
+      "separatorIconUrl": "https://www.figma.com/api/mcp/asset/36a07747-2780-4b51-81f7-c5e4d6113244"
+    },
+    "search": {
+      "placeholder": "Search patients, biomarkers, therapies, alerts, videos ...",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/f1cbd30c-3ec8-4be0-8d5e-86bc5fd3e41a"
+    },
+    "filter": {
+      "label": "Filters",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/8aa1e565-b2c6-4f0f-ad02-fda04d3ed101"
+    }
+  },
+  "tabs": [
+    { "label": "Overview", "href": "/patient/PAT-123/progression/overview" },
+    { "label": "Functional", "href": "/patient/PAT-123/progression/functional" },
+    { "label": "Biomarkers", "href": "/patient/PAT-123/progression/biomarkers" },
+    { "label": "Organ Systems", "href": "/patient/PAT-123/progression/organ-systems" },
+    { "label": "Video Analytics", "href": "/patient/PAT-123/progression/video-analytics" },
+    { "label": "Timeline", "href": "/patient/PAT-123/progression/timeline" }
+  ],
+  "patientSummary": {
+    "backgroundUrl": "https://www.figma.com/api/mcp/asset/0a48e52e-efa3-43f5-a8dc-38b532944e78",
+    "avatarUrl": "https://www.figma.com/api/mcp/asset/03f4940f-3bc2-44eb-b161-1c5372ad920c",
+    "name": "Ethan Doe",
+    "genderBadge": "M",
+    "birthInfo": "8-Jul-2021- 3y 9m",
+    "diagnosis": "Duchenne Muscular Disease",
+    "risk": {
+      "label": "High Risk",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/9b992632-b620-4273-b8fd-5c651ff161b6",
+      "tone": "critical"
+    },
+    "cta": {
+      "label": "Full Details",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/e286e335-bdcf-4758-8c02-cbd60219203c"
+    }
+  },
+  "aiSummary": {
+    "title": "AI Summary",
+    "text": "Patient shows mild decline in mobility and lung function over 6 months. Gene therapy response is positive, but steroid-related side effects (elevated CK, ALT) are emerging. Monitoring and dosage adjustment recommended."
+  },
+  "compositeScore": {
+    "title": "Composite Functional Score",
+    "value": "76",
+    "delta": "-6",
+    "deltaIconUrl": "https://www.figma.com/api/mcp/asset/9ebd82ce-2772-4db2-aa77-6dfba1437625",
+    "trend": "Declined from 84 to 76 over 6 months (-6 pts)",
+    "links": [
+      {
+        "label": "Score breakdown",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/6c8b7fea-972f-4791-a8d5-9c8b4d7776e7"
+      },
+      {
+        "label": "Functional Domains",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/6c8b7fea-972f-4791-a8d5-9c8b4d7776e7"
+      },
+      {
+        "label": "Sources",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/6c8b7fea-972f-4791-a8d5-9c8b4d7776e7"
+      }
+    ]
+  },
+  "summarySection": {
+    "title": "Muscle Degeneration Summary",
+    "dateLabel": "25 April 2025",
+    "statusLabel": "Latest",
+    "metrics": [
+      {
+        "title": "CK",
+        "alert": { "label": "Alerts", "tone": "critical" },
+        "latest": {
+          "label": "Latest",
+          "value": "5,600 U/L",
+          "timestamp": "27 JUN 21:35 PM",
+          "trendIconUrl": "https://www.figma.com/api/mcp/asset/e65992ce-5c3f-480b-90b5-8e150e787403"
+        },
+        "cohort": { "label": "Cohort", "value": "5,400 U/L" },
+        "baseline": { "label": "Baseline", "value": "7,800 U/L" }
+      },
+      {
+        "title": "Fat Fraction",
+        "alert": { "label": "Alerts", "tone": "warning" },
+        "latest": {
+          "label": "Latest",
+          "value": "22 %",
+          "timestamp": "27 JUN 21:35 PM",
+          "trendIconUrl": "https://www.figma.com/api/mcp/asset/e65992ce-5c3f-480b-90b5-8e150e787403"
+        },
+        "cohort": { "label": "Cohort", "value": "18 %" },
+        "baseline": { "label": "Baseline", "value": "12 %" }
+      },
+      {
+        "title": "Fibrosis Index",
+        "alert": { "label": "Alerts", "tone": "critical" },
+        "latest": {
+          "label": "Latest",
+          "value": "0.46",
+          "timestamp": "27 JUN 21:35 PM",
+          "trendIconUrl": "https://www.figma.com/api/mcp/asset/e65992ce-5c3f-480b-90b5-8e150e787403"
+        },
+        "cohort": { "label": "Cohort", "value": "0.38" },
+        "baseline": { "label": "Baseline", "value": "0.30" }
+      }
+    ],
+    "callout": {
+      "iconUrl": "https://www.figma.com/api/mcp/asset/7846661d-e2cd-444d-b8d6-a2e580ca2d67",
+      "text": "Progression markers show gradual muscle loss with elevated creatine kinase and declining dystrophin levels."
+    }
+  },
+  "metricsSection": {
+    "title": "Muscle Degeneration Metrics",
+    "rangeTabs": [
+      { "label": "D" },
+      { "label": "W" },
+      { "label": "M" },
+      { "label": "3M" },
+      { "label": "6M", "active": true },
+      { "label": "Y" }
+    ],
+    "dateRange": {
+      "label": "Jan 2 - Jun 27, 2025",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/66ce207f-a3e6-4ffe-ba23-f1b918d51d6d"
+    },
+    "nav": {
+      "previousIconUrl": "https://www.figma.com/api/mcp/asset/6c8b7fea-972f-4791-a8d5-9c8b4d7776e7",
+      "nextIconUrl": "https://www.figma.com/api/mcp/asset/73a4b515-de44-4eb8-aea9-c820b547b7c1"
+    },
+    "charts": [
+      {
+        "title": "CK",
+        "alert": { "label": "Alerts", "value": "4", "tone": "critical" },
+        "latest": {
+          "label": "Latest",
+          "value": "5,600 U/L",
+          "timestamp": "27 JUN 21:35 PM",
+          "trendIconUrl": "https://www.figma.com/api/mcp/asset/e65992ce-5c3f-480b-90b5-8e150e787403"
+        },
+        "average": {
+          "label": "Average",
+          "value": "6,200 U/L",
+          "timestamp": "2 JAN - 27 JUN, 2025"
+        },
+        "cohort": { "label": "Cohort", "value": "5,400 U/L" },
+        "baseline": { "label": "Baseline", "value": "7,800 U/L" },
+        "yAxisLabels": ["75M", "50M", "25M", "0"],
+        "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        "placeholder": "Chart placeholder",
+        "callout": {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/7846661d-e2cd-444d-b8d6-a2e580ca2d67",
+          "text": "Gradual decline since Feb; below cohort median by 18%"
+        }
+      },
+      {
+        "title": "Fat Fraction",
+        "alert": { "label": "Alerts", "tone": "warning" },
+        "latest": {
+          "label": "Latest",
+          "value": "22 %",
+          "timestamp": "27 JUN 21:35 PM",
+          "trendIconUrl": "https://www.figma.com/api/mcp/asset/e65992ce-5c3f-480b-90b5-8e150e787403"
+        },
+        "average": {
+          "label": "Average",
+          "value": "19 %",
+          "timestamp": "2 JAN - 27 JUN, 2025"
+        },
+        "cohort": { "label": "Cohort", "value": "18 %" },
+        "baseline": { "label": "Baseline", "value": "12 %" },
+        "yAxisLabels": ["75M", "50M", "25M", "0"],
+        "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        "placeholder": "Chart placeholder",
+        "callout": {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/7846661d-e2cd-444d-b8d6-a2e580ca2d67",
+          "text": "Gradual decline since Feb; below cohort median by 18%"
+        }
+      },
+      {
+        "title": "Fibrosis Index",
+        "alert": { "label": "Alerts", "tone": "warning" },
+        "latest": {
+          "label": "Latest",
+          "value": "0.46",
+          "timestamp": "27 JUN 21:35 PM",
+          "trendIconUrl": "https://www.figma.com/api/mcp/asset/e65992ce-5c3f-480b-90b5-8e150e787403"
+        },
+        "average": {
+          "label": "Average",
+          "value": "0.41",
+          "timestamp": "2 JAN - 27 JUN, 2025"
+        },
+        "cohort": { "label": "Cohort", "value": "0.38" },
+        "baseline": { "label": "Baseline", "value": "0.30" },
+        "yAxisLabels": ["75M", "50M", "25M", "0"],
+        "xAxisLabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        "placeholder": "Chart placeholder",
+        "callout": {
+          "iconUrl": "https://www.figma.com/api/mcp/asset/7846661d-e2cd-444d-b8d6-a2e580ca2d67",
+          "text": "Gradual decline since Feb; below cohort median by 18%"
+        }
+      }
+    ]
+  },
+  "emptyState": {
+    "title": "No biomarker data",
+    "description": "Connect biomarker feeds to populate this view."
+  }
+}

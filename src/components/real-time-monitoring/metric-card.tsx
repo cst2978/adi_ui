@@ -2,10 +2,10 @@ import type { MetricStandardResponse } from "@/lib/patientOverviewData";
 import { formatDate } from "@/lib/formatters";
 
 const statusStyles: Record<string, string> = {
-  none: "bg-white/5 text-ink-muted",
-  warning: "bg-warning/20 text-warning",
-  critical: "bg-alert/20 text-alert",
-  success: "bg-success/20 text-success"
+  none: "ds-badge ds-badge-neutral",
+  warning: "ds-badge ds-badge-warning",
+  critical: "ds-badge ds-badge-critical",
+  success: "ds-badge ds-badge-success"
 };
 
 export default function MetricCard({
@@ -24,21 +24,17 @@ export default function MetricCard({
   const series = getSeries(metric, range);
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-panel/90 p-5 shadow-card">
+    <div className="ds-card p-5">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-ink-muted">
-            {metric.title}
-          </p>
+          <p className="ds-label">{metric.title}</p>
           <p className="mt-3 text-2xl font-semibold text-ink">{latest}</p>
           <p className="text-xs text-ink-muted">
             Latest {formatDate(metric.data.current?.recorded_at)}
           </p>
         </div>
         <span
-          className={`rounded-full px-3 py-1 text-xs ${
-            statusStyles[status] ?? statusStyles.none
-          }`}
+          className={statusStyles[status] ?? statusStyles.none}
         >
           {status}
         </span>
@@ -46,25 +42,25 @@ export default function MetricCard({
 
       <div className="mt-4 grid grid-cols-2 gap-3 text-xs text-ink-muted">
         <div className="rounded-xl border border-white/10 bg-panel-soft/80 p-3">
-          <p className="uppercase tracking-[0.2em]">Average</p>
+          <p className="ds-label">Average</p>
           <p className="mt-2 text-sm text-ink">
             {metric.data.average?.label ?? "N/A"}
           </p>
         </div>
         <div className="rounded-xl border border-white/10 bg-panel-soft/80 p-3">
-          <p className="uppercase tracking-[0.2em]">Cohort</p>
+          <p className="ds-label">Cohort</p>
           <p className="mt-2 text-sm text-ink">
             {metric.data.cohort?.label ?? "N/A"}
           </p>
         </div>
         <div className="rounded-xl border border-white/10 bg-panel-soft/80 p-3">
-          <p className="uppercase tracking-[0.2em]">Baseline</p>
+          <p className="ds-label">Baseline</p>
           <p className="mt-2 text-sm text-ink">
             {metric.data.baseline?.label ?? "N/A"}
           </p>
         </div>
         <div className="rounded-xl border border-white/10 bg-panel-soft/80 p-3">
-          <p className="uppercase tracking-[0.2em]">Trend</p>
+          <p className="ds-label">Trend</p>
           <p className="mt-2 text-sm text-ink">
             {metric.data.trend?.delta_label ?? "N/A"}
           </p>
@@ -73,7 +69,7 @@ export default function MetricCard({
 
       {showChart && series.length > 1 ? (
         <div className="mt-4 rounded-xl border border-white/10 bg-panel-soft/70 px-3 py-3">
-          <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.25em] text-ink-muted">
+          <div className="flex items-center justify-between ds-caption uppercase tracking-[0.25em]">
             <span>{range ? `${range} Trend` : "Trend"}</span>
             <span className="text-ink">
               {series[0]?.date} - {series[series.length - 1]?.date}
@@ -86,7 +82,7 @@ export default function MetricCard({
       ) : null}
 
       <div className="mt-4 flex items-center justify-between text-xs text-ink-muted">
-        <span className="uppercase tracking-[0.25em]">Dates</span>
+        <span className="ds-label">Dates</span>
         <span className="text-ink">{timeline}</span>
       </div>
       {alertNote ? (

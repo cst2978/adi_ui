@@ -11,6 +11,7 @@ const allowedModules = new Set(SUBSCRIPTION_MODULES.map((module) => module.id));
 
 type RegisterPayload = {
   fullName?: string;
+  role?: string;
   email?: string;
   password?: string;
   modules?: string[];
@@ -29,6 +30,7 @@ export async function POST(request: Request) {
     const email = (body.email ?? "").trim().toLowerCase();
     const password = body.password ?? "";
     const fullName = (body.fullName ?? "").trim();
+    const role = (body.role ?? "").trim();
     const modules = Array.isArray(body.modules) ? body.modules : [];
     const selectedModules = normalizeModules(modules);
     const moduleCount = selectedModules.length;
@@ -38,6 +40,13 @@ export async function POST(request: Request) {
     if (!email || !password) {
       return NextResponse.json(
         { error: "Email and password are required." },
+        { status: 400 }
+      );
+    }
+
+    if (!fullName) {
+      return NextResponse.json(
+        { error: "Doctor name is required." },
         { status: 400 }
       );
     }
@@ -56,6 +65,7 @@ export async function POST(request: Request) {
       email_confirm: true,
       user_metadata: {
         full_name: fullName,
+        role,
         selected_modules: selectedModules,
         subscription_tier: tier,
         monthly_price: price

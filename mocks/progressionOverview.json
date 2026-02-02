@@ -1,0 +1,173 @@
+{
+  "patientId": "PAT-123",
+  "layout": {
+    "navRail": {
+      "logoUrl": "https://www.figma.com/api/mcp/asset/da1e6ef4-4ec7-447e-bc05-ea7532d4be09",
+      "primaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/4eff6107-7cd7-4edf-b07f-d40f265d95fc" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d1c96a83-45dd-4037-8047-d7aa9a5d9ebe" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/f91bd3a3-f81c-41cc-9279-638fe1186faa", "active": true },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/81541d92-523a-4d0e-8ed3-b91064092c80" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/ce1aaac9-089d-499f-8128-5c50cde37e5b" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d9edcab2-b00b-4ffa-8641-0303eaeaf218" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d1c96a83-45dd-4037-8047-d7aa9a5d9ebe" }
+      ],
+      "middleImageUrl": "https://www.figma.com/api/mcp/asset/13335c3b-1863-4bd7-b843-b52c723c05e1",
+      "secondaryItems": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/bf99c285-1dad-4974-8090-caa03c575eb7" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/d9edcab2-b00b-4ffa-8641-0303eaeaf218" }
+      ]
+    },
+    "topBar": {
+      "navItems": [
+        {
+          "label": "Patients",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/11619442-aae3-490a-a9a7-bb78f244c28d",
+          "active": true,
+          "activeGradient": "linear-gradient(255deg, #2bdbd3 6%, #73d5ff 96%)"
+        },
+        {
+          "label": "Cohort Analytics",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/84cf6a63-ac8d-4721-9f9f-d1fbb512880b",
+          "active": false
+        },
+        {
+          "label": "Gen AI Playground",
+          "iconUrl": "https://www.figma.com/api/mcp/asset/e633456d-2f0c-4ce4-956b-7d264cbe9a67",
+          "active": false
+        }
+      ],
+      "user": {
+        "name": "Dr. Jane Doe",
+        "role": "Pediatric Pulmonologist",
+        "avatarUrl": "https://www.figma.com/api/mcp/asset/e805fed2-41a2-44b1-99f9-98a8ba813338",
+        "menuIconUrl": "https://www.figma.com/api/mcp/asset/384ff1fa-a633-4a38-a474-c2dee1b014f1"
+      },
+      "notificationIconUrl": "https://www.figma.com/api/mcp/asset/b6498a52-02c4-47aa-8a35-89a511eb2438",
+      "settingsIconUrl": "https://www.figma.com/api/mcp/asset/4b378c7c-893d-435f-a0f2-cb0d88682721"
+    },
+    "actionRail": {
+      "toggleIconUrl": "https://www.figma.com/api/mcp/asset/b124f3e1-23cf-4dbb-a7b3-5a1f1259d711",
+      "items": [
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/a176f2a9-f44b-49f4-ab83-276e0806e2e9" },
+        { "iconUrl": "https://www.figma.com/api/mcp/asset/4c57586c-48c4-469b-86ea-dd312f640529" }
+      ]
+    }
+  },
+  "header": {
+    "title": "Progression",
+    "search": {
+      "placeholder": "Search patients, biomarkers, therapies, alerts, videos ...",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/96860779-fe79-4f78-abb4-a7d0d643d4b3"
+    },
+    "filter": {
+      "label": "Filters",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/416d2690-a0a0-4e0f-a2a9-cc37e9813eee"
+    }
+  },
+  "tabs": [
+    { "label": "Overview", "href": "/patient/PAT-123/progression/overview" },
+    { "label": "Functional", "href": "/patient/PAT-123/progression/functional" },
+    { "label": "Biomarkers", "href": "/patient/PAT-123/progression/biomarkers" },
+    { "label": "Organ Systems", "href": "/patient/PAT-123/progression/organ-systems" },
+    { "label": "Video Analytics", "href": "/patient/PAT-123/progression/video-analytics" },
+    { "label": "Timeline", "href": "/patient/PAT-123/progression/timeline" }
+  ],
+  "patientSummary": {
+    "backgroundUrl": "https://www.figma.com/api/mcp/asset/38b7d2a6-f509-474a-9248-5ecbeb2e8bd1",
+    "avatarUrl": "https://www.figma.com/api/mcp/asset/617e43f4-84aa-40ec-abf8-dbf58de1bf8d",
+    "name": "Ethan Doe",
+    "genderBadge": "M",
+    "birthInfo": "8-Jul-2021- 3y 9m",
+    "diagnosis": "Duchenne Muscular Disease",
+    "risk": {
+      "label": "High Risk",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/1bd04b4a-0d5d-4bd4-a55e-7f032d087b53",
+      "tone": "critical"
+    },
+    "cta": {
+      "label": "Full Details",
+      "iconUrl": "https://www.figma.com/api/mcp/asset/1ccf6928-59c4-4ee2-b8dd-050f3fd6062c"
+    }
+  },
+  "aiSummary": {
+    "title": "AI Summary",
+    "text": "Patient shows mild decline in mobility and lung function over 6 months. Gene therapy response is positive, but steroid-related side effects (elevated CK, ALT) are emerging. Monitoring and dosage adjustment recommended."
+  },
+  "compositeScore": {
+    "title": "Composite Functional Score",
+    "value": "76",
+    "delta": "-6",
+    "deltaIconUrl": "https://www.figma.com/api/mcp/asset/ce5da39d-9546-483d-803e-2648795a6bc5",
+    "trend": "Declined from 84 to 76 over 6 months (-6 pts)",
+    "links": [
+      {
+        "label": "Score breakdown",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/bc4d1c95-b5b9-4ca8-8f1f-adcd009648f2"
+      },
+      {
+        "label": "Functional Domains",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/bc4d1c95-b5b9-4ca8-8f1f-adcd009648f2"
+      },
+      {
+        "label": "Sources",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/bc4d1c95-b5b9-4ca8-8f1f-adcd009648f2"
+      }
+    ]
+  },
+  "progressionStatus": {
+    "title": "Progression Status",
+    "status": { "label": "Critical", "tone": "critical" },
+    "summary": "Functional decline detected across mobility and endurance measures."
+  },
+  "keyDrivers": {
+    "title": "Key Drivers",
+    "intro": {
+      "label": "Primary contributors identified in",
+      "highlight": "Mobility & Gait and Video-Based Functional Assessments"
+    },
+    "items": [
+      {
+        "text": "Mobility score declined 8 points over 6 months",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/1ccf6928-59c4-4ee2-b8dd-050f3fd6062c"
+      },
+      {
+        "text": "Increased gait asymmetry detected in real-world monitoring",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/1ccf6928-59c4-4ee2-b8dd-050f3fd6062c"
+      },
+      {
+        "text": "Reduced endurance during sit-to-stand assessments",
+        "iconUrl": "https://www.figma.com/api/mcp/asset/1ccf6928-59c4-4ee2-b8dd-050f3fd6062c"
+      }
+    ]
+  },
+  "diseaseProgression": {
+    "title": "Overall Disease Progression",
+    "description": "Ethan Doe shows moderate but accelerating disease progression over the last 2 years, with declining functional and pulmonary scores despite stabilized biomarkers.",
+    "score": {
+      "label": "Normalized Score",
+      "value": "64",
+      "timestamp": "27 Jun 21 3:35 PM",
+      "trendIconUrl": "https://www.figma.com/api/mcp/asset/2335fe43-d99b-4b0c-b105-e529107e38ea"
+    },
+    "legend": [
+      { "label": "Cohort", "tone": "neutral" },
+      { "label": "Baseline", "tone": "info" },
+      { "label": "Predicted", "tone": "warning" },
+      { "label": "Alerts", "tone": "critical" },
+      { "label": "Medicines", "tone": "success" },
+      { "label": "Biomarkers", "tone": "info" }
+    ],
+    "xAxisLabels": ["Jan’20", "Feb’20", "Mar’20", "Apr’20", "May’20", "Jun’20", "Jul’20", "Aug’20", "Sep’20", "Oct’20"],
+    "yAxisLabels": ["75M", "50M", "25M", "0"],
+    "placeholder": "Chart placeholder",
+    "callout": {
+      "iconUrl": "https://www.figma.com/api/mcp/asset/760e964f-121e-4fad-ae97-8303b7d2b502",
+      "text": "Functional capacity has dropped by 8 NSAA points; FVC fell from 72% to 58%, indicating increased risk of mobility and respiratory decline within the next 6–12 months."
+    }
+  },
+  "emptyState": {
+    "title": "No progression data",
+    "description": "Connect progression signals to populate this view."
+  }
+}

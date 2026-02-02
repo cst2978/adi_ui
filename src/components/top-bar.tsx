@@ -1,5 +1,7 @@
 import Image from "next/image";
 import UserMenu from "@/components/user-menu";
+import SearchInput from "@/components/ui/search-input";
+import Button from "@/components/ui/button";
 
 export default function TopBar() {
   return (
@@ -14,18 +16,14 @@ export default function TopBar() {
         />
       </div>
       <div className="flex flex-1 flex-wrap items-center justify-end gap-3">
-        <div className="relative w-full max-w-md">
-          <input
-            className="w-full rounded-xl border border-white/10 bg-panel-soft/70 px-4 py-3 text-sm text-ink placeholder:text-ink-muted outline-none transition focus:border-accent/60"
-            placeholder="Search patients, mutations, therapies"
-          />
-          <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs uppercase tracking-[0.3em] text-ink-muted">
-            CMD K
-          </div>
-        </div>
-        <button className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-ink">
+        <SearchInput
+          wrapperClassName="w-full max-w-md"
+          placeholder="Search patients, mutations, therapies"
+          suffix="CMD K"
+        />
+        <Button type="button" variant="ghost">
           Filters
-        </button>
+        </Button>
         <UserMenu />
       </div>
     </header>

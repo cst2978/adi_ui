@@ -9,5 +9,5 @@ export default async function HomePage() {
     redirect("/auth/signin");
   }
 
-  redirect("/patients/overview");
+  redirect("/patients");
 }
